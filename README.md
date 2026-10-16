@@ -23,11 +23,11 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 
 ## Version 2: lyophilization only
 
-`v2/` holds a second version of the site that covers lyophilization alone, live at `/v2/` next to Version 1. It shares the logo, stylesheet and script in `assets/`.
+`v2/` holds a second version of the site that covers lyophilization alone, live at `/v2/` next to Version 1. Its home page is one long lyophilization landing page (why lyophilize, benefits, formats, how we work, applications, fit check, FAQ), modeled on the structure of a specialist CDMO's lyophilization service page. The six detail pages below sit behind the "How we work" section. It shares the logo, stylesheet and script in `assets/`.
 
 | Page | File |
 |---|---|
-| Home | `v2/index.html` |
+| Home (lyophilization landing page) | `v2/index.html` |
 | Feasibility & Formulation | `v2/feasibility.html` |
 | Thermal Characterization | `v2/characterization.html` |
 | Cycle Development | `v2/cycle-development.html` |

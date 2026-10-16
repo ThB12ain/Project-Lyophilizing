@@ -21,6 +21,9 @@ OUT = ROOT / "v2"
 SERVICES = json.loads((V2 / "services.json").read_text())
 ORDER = list(SERVICES)
 FILE = {k: f"{k}.html" for k in ORDER}
+SECTIONS = [("why", "Why Lyophilize"), ("benefits", "Benefits"), ("formats", "Formats"),
+            ("process", "How We Work"), ("applications", "Applications"), ("fit", "Is It a Fit?"),
+            ("faq", "FAQ")]
 ICONS = (V2 / "partials" / "icons.svg").read_text()
 CHAIN_HINT = {"feasibility": "Is lyo right?", "characterization": "Tc, Tg′",
               "cycle-development": "Recipe and optimization", "scale-up": "Pilot to production",
@@ -34,12 +37,8 @@ def v2_head(title, description):
 def header(active):
     def cur(k):
         return ' aria-current="page"' if k == active else ""
-    tabs = []
-    for k in ORDER:
-        s = SERVICES[k]
-        star = '<span class="star">CORE</span>' if s.get("featured") else ""
-        cls = ' class="featured"' if s.get("featured") else ""
-        tabs.append(f'<a href="{FILE[k]}"{cls}{cur(k)}>{e(s["title"])}{star}</a>')
+    base = "" if active == "home" else "index.html"
+    tabs = [f'<a href="{base}#{anchor}">{label}</a>' for anchor, label in SECTIONS]
     return f"""<header class="site">
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="{BRAND} home">
@@ -54,7 +53,7 @@ def header(active):
     </div>
   </div>
   <div class="tabs-scroll">
-    <nav class="wrap tabs" aria-label="Lyophilization services">
+    <nav class="wrap tabs" aria-label="Lyophilization sections">
       {chr(10).join("      " + t for t in tabs).strip()}
     </nav>
   </div>
@@ -64,8 +63,8 @@ def header(active):
 
 CTA = """<section class="cta-band on-ink">
     <div class="wrap">
-      <div><h2>Send us your formulation.</h2><p>We'll tell you what freeze-drying will take, from first study to GMP batch.</p></div>
-      <a class="btn btn-primary" href="contact.html">Talk to a lyo scientist</a>
+      <div><h2>Frozen, chilled or room temperature. You decide how it ships.</h2><p>Have your experts talk with ours about taking your product dry.</p></div>
+      <a class="btn btn-primary" href="contact.html">Talk to an expert</a>
     </div>
   </section>"""
 
@@ -122,7 +121,7 @@ def service_body(k):
     return f"""<section class="page-hero on-ink">
     <div class="wrap">
       <div>
-        <p class="crumb"><a href="index.html">Lyophilization</a> / {e(s['title'])}</p>
+        <p class="crumb"><a href="index.html">Lyophilization</a> / <a href="index.html#process">How we work</a> / {e(s['title'])}</p>
         <h1>{e(s['headline'])}</h1>
         <p class="lede">{e(s['lede'])}</p>
       </div>
