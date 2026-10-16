@@ -22,7 +22,7 @@ ORDER = ["washing", "sterilizing", "mixing", "filling", "lyophilization",
 CHAIN = [k for k in ORDER if SERVICES[k].get("step")]
 CHAIN_HINT = {"washing": "Vials, stoppers", "sterilizing": "Depyrogenation",
               "mixing": "Compounding", "filling": "Aseptic fill",
-              "lyophilization": "Freeze-drying", "capping": "Seal and inspect",
+              "lyophilization": "Primary and secondary drying", "capping": "Seal and inspect",
               "labeling": "Label and pack"}
 FILE = {k: f"{k}.html" for k in ORDER}
 FILE["synthesis"] = "custom-synthesis.html"

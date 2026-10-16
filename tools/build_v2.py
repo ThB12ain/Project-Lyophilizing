@@ -21,9 +21,9 @@ OUT = ROOT / "v2"
 SERVICES = json.loads((V2 / "services.json").read_text())
 ORDER = list(SERVICES)
 FILE = {k: f"{k}.html" for k in ORDER}
-SECTIONS = [("why", "Why Lyophilize"), ("benefits", "Benefits"), ("formats", "Formats"),
-            ("process", "How We Work"), ("applications", "Applications"), ("fit", "Is It a Fit?"),
-            ("faq", "FAQ")]
+SECTIONS = [("formats", "Formats"), ("applications", "Applications"), ("capabilities", "Capabilities"),
+            ("prototyping", "Bead Prototyping"), ("swabs", "Swabs & Surfaces"), ("process", "Working Together"),
+            ("support", "Support Services"), ("faq", "FAQ")]
 ICONS = (V2 / "partials" / "icons.svg").read_text()
 CHAIN_HINT = {"feasibility": "Is lyo right?", "characterization": "Tc, Tg′",
               "cycle-development": "Recipe and optimization", "scale-up": "Pilot to production",
@@ -171,7 +171,7 @@ def build_v2():
     pages["index.html"] = page(
         "home", f"{BRAND} · Lyophilization",
         "Sublyra Sciences is a lyophilization specialist: feasibility, thermal characterization, "
-        "cycle development, scale-up, GMP freeze-drying and release testing.", home)
+        "cycle development, scale-up, GMP lyophilization and release testing.", home)
     for k in ORDER:
         s = SERVICES[k]
         pages[FILE[k]] = page(k, f"{s['title']} · {BRAND}", s["card"], service_body(k))
