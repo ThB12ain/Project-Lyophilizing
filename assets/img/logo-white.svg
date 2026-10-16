@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 48" width="544" height="96">
+  <title>Sublyra Sciences</title>
+  <g transform="translate(0 4)">
+    <path d="M31.3 15.5v13L20 35 8.7 28.5v-13L20 9" fill="none" stroke="#E6F0F2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 17.2l5 2.9v5.8l-5 2.9-5-2.9v-5.8z" fill="#5CC6D3"/>
+    <circle cx="25.6" cy="10.4" r="2" fill="#5CC6D3"/><circle cx="30.6" cy="7.6" r="1.55" fill="#5CC6D3"/><circle cx="34.6" cy="4.6" r="1.15" fill="#5CC6D3"/>
+  </g>
+  <text x="48" y="31" font-family="Schibsted Grotesk, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="700" fill="#E6F0F2" letter-spacing="-0.3">Sublyra</text>
+  <text x="153" y="31" font-family="Schibsted Grotesk, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="500" fill="#5CC6D3">Sciences</text>
+</svg>

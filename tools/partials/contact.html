@@ -1,0 +1,41 @@
+<section class="page-hero on-ink">
+      <div class="wrap">
+        <div>
+          <p class="crumb"><a href="index.html">Overview</a> / Contact</p>
+          <h1>Talk to a lyophilization expert.</h1>
+          <p class="lede">Tell us about your product and the steps you need. A scientist, not a salesperson, will answer within one business day.</p>
+        </div>
+      </div>
+    </section>
+    <section class="band">
+      <div class="wrap contact-grid">
+        <div class="contact-info">
+          <div><h3>Business development</h3><p>hello@sublyra.example</p></div>
+          <div><h3>Phone</h3><p>+1 (555) 010-0142</p></div>
+          <div><h3>Facility</h3><p>1200 Example Way, Suite 100<br>Anytown, CA 90000</p></div>
+          <div><h3>Hours</h3><p>Monday to Friday, 8:00 to 17:00 PT</p></div>
+        </div>
+        <form class="contact" id="contact-form" novalidate>
+          <label>Full name<input id="f-name" name="name" autocomplete="name" required></label>
+          <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
+          <label>Work email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+          <label>Program stage
+            <select id="f-stage" name="stage">
+              <option>Feasibility / pre-clinical</option>
+              <option>Phase I–II clinical</option>
+              <option>Phase III / commercial</option>
+              <option>Diagnostic or research reagent</option>
+            </select>
+          </label>
+          <fieldset class="svc-pick full" id="f-services">
+            <legend>Services you need</legend>
+          </fieldset>
+          <label class="full">About your product<textarea id="f-msg" name="message" placeholder="Molecule or reagent type, fill volume, container, batch size, timeline"></textarea></label>
+          <div class="full" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <button class="btn btn-solid" type="submit">Send inquiry</button>
+            <span class="form-note">We reply within one business day.</span>
+          </div>
+          <div class="form-done" id="form-done" hidden></div>
+        </form>
+      </div>
+    </section>
