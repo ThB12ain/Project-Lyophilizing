@@ -2,7 +2,7 @@
 
 ## Name
 
-**Sublyra** comes from *sublimation*, the step in freeze-drying where ice turns straight to vapor, and *lyo*, short for lyophilization.
+**Sublyra** comes from *sublimation*, the step in lyophilization where ice turns straight to vapor, and *lyo*, short for lyophilization.
 
 ## Logo
 

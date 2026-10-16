@@ -1,6 +1,6 @@
 # Sublyra Sciences website
 
-Static marketing site for **Sublyra Sciences**, a contract manufacturer that specializes in lyophilization (freeze-drying) and offers washing, sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.
+Static marketing site for **Sublyra Sciences**, a contract manufacturer that specializes in lyophilization and offers washing, sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.
 
 > "Sublyra Sciences" is a working brand name. The address, phone, email and all capacity figures on the site are sample values to replace before launch.
 
@@ -32,7 +32,7 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 | Thermal Characterization | `v2/characterization.html` |
 | Cycle Development | `v2/cycle-development.html` |
 | Scale-up & Tech Transfer | `v2/scale-up.html` |
-| GMP Freeze-Drying | `v2/gmp.html` |
+| GMP Lyophilization | `v2/gmp.html` |
 | Release Testing | `v2/testing.html` |
 | Quality | `v2/quality.html` |
 | Contact | `v2/contact.html` |

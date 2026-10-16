@@ -1,17 +1,17 @@
 {
  "feasibility": {
   "title": "Feasibility & Formulation", "short": "Feasibility", "icon": "i-rnd", "step": 1,
-  "card": "Find out whether freeze-drying suits your product, and build a formulation that survives it.",
-  "headline": "Know if your product should be freeze-dried before you commit.",
+  "card": "Find out whether lyophilization suits your product, and build a formulation that survives it.",
+  "headline": "Know if your product should be lyophilized before you commit.",
   "lede": "Small-scale screening runs and excipient studies tell you whether lyophilization improves stability, and which formulation gives the best cake.",
   "keyfacts": [["Typical study", "4 to 6 weeks"], ["Material needed", "from 50 mL of bulk"], ["Output", "Go / no-go report"]],
   "caps": [
-   ["Liquid vs. lyo stability", "Side-by-side stress studies compare your liquid product with freeze-dried samples so the decision rests on data."],
+   ["Liquid vs. lyo stability", "Side-by-side stress studies compare your liquid product with lyophilized samples so the decision rests on data."],
    ["Excipient screening", "Bulking agents, cryoprotectants and buffers chosen to protect your active and form an elegant cake."],
    ["Fill and container selection", "Fill depth, vial size and stopper design matched to drying time and reconstitution needs."]
   ],
   "specTitle": "Feasibility at a glance",
-  "specBody": ["Screening runs on a laboratory freeze-dryer with product probes and cake imaging.", "Results feed directly into thermal characterization and cycle development, with no transfer between teams."],
+  "specBody": ["Screening runs on a laboratory lyophilizer with product probes and cake imaging.", "Results feed directly into thermal characterization and cycle development, with no transfer between teams."],
   "spec": [["Screening dryer", "Lab scale, 0.2 m² shelf"], ["Excipients", "Sucrose, trehalose, mannitol, glycine and others"], ["Stress conditions", "Thermal, freeze-thaw, agitation"], ["Assays", "Potency, aggregation, appearance, moisture"], ["Deliverable", "Feasibility report with recommendation"]],
   "deliverables": ["Feasibility report with go / no-go recommendation", "Recommended formulation and fill configuration", "Cake images and reconstitution data"]
  },
@@ -19,10 +19,10 @@
   "title": "Thermal Characterization", "short": "Characterization", "icon": "i-thermo", "step": 2,
   "card": "Measure collapse and glass transition temperatures so the cycle is designed around facts, not guesses.",
   "headline": "Every cycle starts with the right temperatures.",
-  "lede": "Freeze-dry microscopy and calorimetry find the critical temperatures your product must stay below during drying.",
-  "keyfacts": [["Collapse temp (Tc)", "Freeze-dry microscopy"], ["Glass transition (Tg′)", "Modulated DSC"], ["Eutectic (Teu)", "DSC, electrical resistance"]],
+  "lede": "Lyomicroscopy and calorimetry find the critical temperatures your product must stay below during drying.",
+  "keyfacts": [["Collapse temp (Tc)", "Lyomicroscopy"], ["Glass transition (Tg′)", "Modulated DSC"], ["Eutectic (Teu)", "DSC, electrical resistance"]],
   "caps": [
-   ["Freeze-dry microscopy", "We watch your formulation dry under a microscope and record the exact temperature where structure starts to fail."],
+   ["Lyomicroscopy", "We watch your formulation dry under a microscope and record the exact temperature where structure starts to fail."],
    ["Differential scanning calorimetry", "Modulated DSC finds the glass transition of the frozen concentrate and any crystallizing components."],
    ["Frozen-state behavior", "Annealing and nucleation studies show how freezing conditions change ice structure and drying speed."]
   ],
@@ -33,7 +33,7 @@
  },
  "cycle-development": {
   "title": "Cycle Development", "short": "Cycle Development", "icon": "i-curve", "step": 3,
-  "card": "Design and optimize a freeze-drying recipe that is short, robust and gentle on your product.",
+  "card": "Design and optimize a lyophilization recipe that is short, robust and gentle on your product.",
   "headline": "Cycles built to be short, robust and repeatable.",
   "lede": "We write your first recipe from thermal data, then optimize primary drying so the cycle runs as fast as your product safely allows.",
   "keyfacts": [["Typical program", "3 to 5 runs"], ["Approach", "Design space, QbD"], ["Typical saving", "20–40% cycle time"]],
@@ -64,17 +64,17 @@
   "deliverables": ["Scale-up or tech transfer protocol and report", "Engineering batch data", "Recommended production recipe"]
  },
  "gmp": {
-  "title": "GMP Freeze-Drying", "short": "GMP Freeze-Drying", "icon": "i-lyo", "step": 5, "featured": true,
-  "card": "Clinical and commercial lyophilization on production freeze-dryers with full process monitoring.",
-  "headline": "GMP freeze-drying, from clinical lots to commercial supply.",
-  "lede": "Production freeze-dryers with automatic loading run your validated recipe under GMP, with every sensor recorded in the batch record.",
+  "title": "GMP Lyophilization", "short": "GMP Lyophilization", "icon": "i-lyo", "step": 5, "featured": true,
+  "card": "Clinical and commercial lyophilization on production lyophilizers with full process monitoring.",
+  "headline": "GMP lyophilization, from clinical lots to commercial supply.",
+  "lede": "Production lyophilizers with automatic loading run your validated recipe under GMP, with every sensor recorded in the batch record.",
   "keyfacts": [["Shelf area", "0.5 m² to 32 m²"], ["Shelf range", "−70 °C to +60 °C"], ["Condenser", "−85 °C"], ["Residual moisture", "< 1% typical"]],
   "caps": [
    ["Clinical batches", "Small lots for Phase I to III on dryers that share controls with commercial units."],
    ["Commercial supply", "Large production dryers with automatic loading and unloading systems for repeat batches."],
    ["Process validation", "Process performance qualification and continued verification to support your license."]
   ],
-  "specTitle": "GMP freeze-drying at a glance",
+  "specTitle": "GMP lyophilization at a glance",
   "specBody": ["Dryers are steam sterilized and leak tested before each batch.", "Every batch record includes the full cycle trend data, alarms and end-point evidence."],
   "spec": [["Dryers", "Pilot 0.5 m², production 10 m² and 32 m²"], ["Shelf temperature", "−70 °C to +60 °C"], ["Condenser", "−85 °C, 50 kg ice capacity"], ["Chamber pressure", "20 to 1,000 mTorr"], ["Sterilization", "SIP with leak rate testing"], ["Loading", "Automatic loading and unloading"], ["Stoppering", "In-chamber, under nitrogen"]],
   "deliverables": ["Executed GMP batch record with full cycle data", "Process validation protocols and reports", "Deviation and change-control support"]
@@ -82,7 +82,7 @@
  "testing": {
   "title": "Release Testing", "short": "Testing", "icon": "i-check", "step": 6,
   "card": "Moisture, reconstitution, cake appearance and stability testing for lyophilized product.",
-  "headline": "Testing designed for freeze-dried products.",
+  "headline": "Testing designed for lyophilized products.",
   "lede": "Our lab runs the tests a lyophilized product needs for release and stability, so results come back quickly from the same site.",
   "keyfacts": [["Moisture", "Karl Fischer, NIR"], ["Stability", "ICH conditions"], ["Container integrity", "Headspace analysis"]],
   "caps": [

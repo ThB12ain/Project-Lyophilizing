@@ -208,8 +208,8 @@
   "icon": "i-fill",
   "step": 4,
   "card": "Isolator-based aseptic filling of vials with partial stoppering for lyophilization.",
-  "headline": "Aseptic filling, ready for the freeze-dryer.",
-  "lede": "Our isolator line fills, weighs and partially stoppers vials in Grade A air, then loads them into the freeze-dryer without opening the barrier.",
+  "headline": "Aseptic filling, ready for the lyophilizer.",
+  "lede": "Our isolator line fills, weighs and partially stoppers vials in Grade A air, then loads them into the lyophilizer without opening the barrier.",
   "keyfacts": [
    [
     "Fill range",
@@ -234,7 +234,7 @@
     "In-line weighing adjusts fill pumps in real time to hold your target volume."
    ],
    [
-    "Automatic freeze-dryer loading",
+    "Automatic lyophilizer loading",
     "Partially stoppered vials move by conveyor directly onto the lyophilizer shelves."
    ]
   ],
@@ -276,8 +276,8 @@
   "icon": "i-lyo",
   "step": 5,
   "featured": true,
-  "card": "Cycle development, optimization and GMP freeze-drying from pilot lots to commercial batches.",
-  "headline": "Freeze-drying is what we do best.",
+  "card": "Cycle development, optimization and GMP lyophilization from pilot lots to commercial batches.",
+  "headline": "Lyophilization is what we do best.",
   "lede": "We design cycles from your formulation's thermal data, scale them from pilot to production dryers, and run them under GMP with full process monitoring.",
   "keyfacts": [
    [
@@ -300,7 +300,7 @@
   "caps": [
    [
     "Thermal characterization",
-    "Freeze-dry microscopy and DSC find your collapse and glass transition temperatures before any cycle is written."
+    "Lyomicroscopy and DSC find your collapse and glass transition temperatures before any cycle is written."
    ],
    [
     "Cycle development and optimization",
@@ -359,7 +359,7 @@
   "step": 6,
   "card": "Full stoppering inside the dryer, then aluminum crimp sealing with 100% container closure inspection.",
   "headline": "Sealing that protects the cake you just dried.",
-  "lede": "Vials are fully stoppered inside the freeze-dryer under controlled atmosphere, then crimp sealed and inspected before they leave the clean zone.",
+  "lede": "Vials are fully stoppered inside the lyophilizer under controlled atmosphere, then crimp sealed and inspected before they leave the clean zone.",
   "keyfacts": [
    [
     "Stoppering",
@@ -493,7 +493,7 @@
   "title": "R&D",
   "icon": "i-rnd",
   "support": true,
-  "card": "Formulation development, feasibility studies and stability programs that get your product ready to freeze-dry.",
+  "card": "Formulation development, feasibility studies and stability programs that get your product ready to lyophilize.",
   "headline": "Formulation science before the first cycle.",
   "lede": "Our scientists screen excipients, build stable formulations and run the studies that tell you whether, and how, your product should be lyophilized.",
   "keyfacts": [
@@ -517,7 +517,7 @@
    ],
    [
     "Lyophilization feasibility",
-    "Small-scale freeze-drying runs show cake quality and stability before you commit to scale."
+    "Small-scale lyophilization runs show cake quality and stability before you commit to scale."
    ],
    [
     "Stability and analytics",
@@ -532,7 +532,7 @@
   "spec": [
    [
     "Thermal analysis",
-    "DSC, freeze-dry microscopy"
+    "DSC, lyomicroscopy"
    ],
    [
     "Moisture",
