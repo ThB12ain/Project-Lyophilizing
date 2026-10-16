@@ -21,6 +21,24 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 | Quality | `quality.html` |
 | Contact | `contact.html` |
 
+## Version 2: lyophilization only
+
+`v2/` holds a second version of the site that covers lyophilization alone, live at `/v2/` next to Version 1. Its home page is one long lyophilization landing page (why lyophilize, benefits, formats, how we work, applications, fit check, FAQ), modeled on the structure of a specialist CDMO's lyophilization service page. The six detail pages below sit behind the "How we work" section. It shares the logo, stylesheet and script in `assets/`.
+
+| Page | File |
+|---|---|
+| Home (lyophilization landing page) | `v2/index.html` |
+| Feasibility & Formulation | `v2/feasibility.html` |
+| Thermal Characterization | `v2/characterization.html` |
+| Cycle Development | `v2/cycle-development.html` |
+| Scale-up & Tech Transfer | `v2/scale-up.html` |
+| GMP Freeze-Drying | `v2/gmp.html` |
+| Release Testing | `v2/testing.html` |
+| Quality | `v2/quality.html` |
+| Contact | `v2/contact.html` |
+
+Edit `tools/v2/services.json` or `tools/v2/partials/home.html`, then run `python3 tools/build_v2.py`. Version 2 reuses Version 1's Quality and Contact content from `tools/partials/`.
+
 ## Project layout
 
 ```
