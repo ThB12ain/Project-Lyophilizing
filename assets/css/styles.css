@@ -315,3 +315,15 @@ table.spec.equip th[scope="row"], table.spec.equip td:nth-child(2) { width: auto
 .crosslist li::before, .crosslist li::after { content: ""; position: absolute; left: 3px; top: 12px; width: 12px; height: 2px; background: var(--amber); transform: rotate(45deg); }
 .crosslist li::after { transform: rotate(-45deg); }
 @media (max-width: 760px) { .fit { grid-template-columns: 1fr; } }
+.tablist { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.tablist [role="tab"] { font: inherit; font-family: var(--font-display); font-weight: 600; font-size: 15px; padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+.tablist [role="tab"]:hover { color: var(--fg); border-color: var(--teal); }
+.tablist [role="tab"][aria-selected="true"] { background: var(--teal); border-color: var(--teal); color: var(--surface); }
+.chain.chain-5 { grid-template-columns: repeat(5, 1fr); }
+.chain .step-name { display: block; margin-top: 4px; font-family: var(--font-display); font-weight: 600; font-size: 16px; color: var(--fg); }
+.chain li.on .step-name { color: var(--teal); }
+@media (max-width: 900px) { .chain.chain-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .chain.chain-5 { grid-template-columns: 1fr 1fr; } }
+table.spec.formats-table thead th { font-family: var(--font-mono); font-weight: 500; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--frost); width: auto; }
+table.spec.formats-table th[scope="row"] { width: auto; white-space: nowrap; }
+table.spec.formats-table { min-width: 640px; }
