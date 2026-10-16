@@ -1,0 +1,628 @@
+{
+ "washing": {
+  "title": "Washing",
+  "icon": "i-wash",
+  "step": 1,
+  "card": "Validated washing of vials, stoppers and components to remove particulates and endotoxin before sterilization.",
+  "headline": "Component washing that starts every batch clean.",
+  "lede": "Glass vials, stoppers and seals are washed with purified water and water for injection on validated cycles, then handed straight to sterilization.",
+  "keyfacts": [
+   [
+    "Final rinse",
+    "WFI, 80 °C"
+   ],
+   [
+    "Particulate spec",
+    "USP <788>"
+   ],
+   [
+    "Throughput",
+    "up to 24,000 vials/h"
+   ]
+  ],
+  "caps": [
+   [
+    "Automated vial washing",
+    "Rotary washers with alternating WFI and compressed-air jets clean the inside and outside of every vial."
+   ],
+   [
+    "Stopper and seal processing",
+    "Rubber closures are washed, siliconized if required, and bagged for steam sterilization."
+   ],
+   [
+    "Endotoxin control",
+    "Wash cycles are qualified to remove endotoxin and particulates, with rinse water sampled each run."
+   ]
+  ],
+  "specTitle": "Washing at a glance",
+  "specBody": [
+   "Washing runs in-line with depyrogenation, so clean vials never wait in open air.",
+   "We qualify each new component format with spiked particulate and endotoxin challenge studies."
+  ],
+  "spec": [
+   [
+    "Vial formats",
+    "2R to 50R, ISO 8362"
+   ],
+   [
+    "Wash media",
+    "Purified water, WFI"
+   ],
+   [
+    "Final rinse temperature",
+    "80 °C"
+   ],
+   [
+    "Component types",
+    "Vials, stoppers, seals, ampoules"
+   ],
+   [
+    "Monitoring",
+    "Conductivity, TOC, endotoxin"
+   ]
+  ],
+  "deliverables": [
+   "Washing batch record within your master record",
+   "Rinse water test results",
+   "Component qualification report for new formats"
+  ]
+ },
+ "sterilizing": {
+  "title": "Sterilizing",
+  "icon": "i-steril",
+  "step": 2,
+  "card": "Dry-heat depyrogenation, steam sterilization and VHP decontamination for components and equipment.",
+  "headline": "Sterilization and depyrogenation you can audit.",
+  "lede": "Washed vials pass through a dry-heat tunnel into the Grade A filling zone. Stoppers, tools and change parts are steam sterilized on validated loads.",
+  "keyfacts": [
+   [
+    "Depyrogenation",
+    "≥ 3-log endotoxin reduction"
+   ],
+   [
+    "Tunnel",
+    "300 °C+ dry heat"
+   ],
+   [
+    "Steam",
+    "121 °C validated loads"
+   ]
+  ],
+  "caps": [
+   [
+    "Dry-heat depyrogenation",
+    "A continuous tunnel delivers sterile, endotoxin-free vials directly into the isolator."
+   ],
+   [
+    "Steam sterilization",
+    "Autoclave cycles for stoppers, filling parts and garments, each with load maps and biological indicators."
+   ],
+   [
+    "VHP decontamination",
+    "Vaporized hydrogen peroxide cycles decontaminate isolators and material transfers."
+   ]
+  ],
+  "specTitle": "Sterilization at a glance",
+  "specBody": [
+   "Every load runs on a validated cycle with recorded temperature, pressure and time.",
+   "We run endotoxin challenge vials and biological indicators to confirm each cycle meets its target."
+  ],
+  "spec": [
+   [
+    "Depyrogenation tunnel",
+    "Dry heat, ≥ 300 °C"
+   ],
+   [
+    "Autoclave",
+    "Saturated steam, 121–134 °C"
+   ],
+   [
+    "Isolator decon",
+    "VHP, 6-log reduction"
+   ],
+   [
+    "Indicators",
+    "Biological and chemical"
+   ],
+   [
+    "Records",
+    "21 CFR Part 11 electronic"
+   ]
+  ],
+  "deliverables": [
+   "Cycle printouts in your batch record",
+   "Biological indicator results",
+   "Sterilization validation summary on request"
+  ]
+ },
+ "mixing": {
+  "title": "Mixing",
+  "icon": "i-mix",
+  "step": 3,
+  "card": "GMP compounding and sterile filtration of solutions and suspensions from bench scale to production tanks.",
+  "headline": "Compounding that keeps your formulation consistent.",
+  "lede": "We weigh, dissolve and blend your formulation in jacketed single-use or stainless vessels, then sterile-filter it into the filling suite.",
+  "keyfacts": [
+   [
+    "Batch size",
+    "1 L to 500 L"
+   ],
+   [
+    "Filtration",
+    "0.2 µm, integrity tested"
+   ],
+   [
+    "Vessels",
+    "Single-use or stainless"
+   ]
+  ],
+  "caps": [
+   [
+    "Solution and suspension prep",
+    "Controlled-temperature mixing with in-process checks for pH, osmolality and concentration."
+   ],
+   [
+    "Sterile filtration",
+    "Redundant 0.2 µm filtration with pre- and post-use integrity testing."
+   ],
+   [
+    "Low-shear handling",
+    "Mixing profiles suited to proteins and other shear-sensitive actives."
+   ]
+  ],
+  "specTitle": "Mixing at a glance",
+  "specBody": [
+   "Raw materials are released by our QC lab before dispensing.",
+   "Hold-time studies define how long the bulk can wait before filling."
+  ],
+  "spec": [
+   [
+    "Vessel range",
+    "1 L to 500 L"
+   ],
+   [
+    "Temperature control",
+    "2 °C to 40 °C jacketed"
+   ],
+   [
+    "Filtration",
+    "0.2 µm, redundant"
+   ],
+   [
+    "In-process tests",
+    "pH, osmolality, bioburden"
+   ],
+   [
+    "Atmosphere",
+    "Nitrogen overlay available"
+   ]
+  ],
+  "deliverables": [
+   "Compounding batch record",
+   "Filter integrity results",
+   "In-process test data and hold-time support"
+  ]
+ },
+ "filling": {
+  "title": "Filling",
+  "icon": "i-fill",
+  "step": 4,
+  "card": "Isolator-based aseptic filling of vials with partial stoppering for lyophilization.",
+  "headline": "Aseptic filling, ready for the freeze-dryer.",
+  "lede": "Our isolator line fills, weighs and partially stoppers vials in Grade A air, then loads them into the freeze-dryer without opening the barrier.",
+  "keyfacts": [
+   [
+    "Fill range",
+    "0.2 mL to 50 mL"
+   ],
+   [
+    "Accuracy",
+    "± 1% by checkweight"
+   ],
+   [
+    "Barrier",
+    "Closed isolator, Grade A"
+   ]
+  ],
+  "caps": [
+   [
+    "Isolator filling",
+    "A closed barrier separates operators from open product throughout filling."
+   ],
+   [
+    "100% checkweighing",
+    "In-line weighing adjusts fill pumps in real time to hold your target volume."
+   ],
+   [
+    "Automatic freeze-dryer loading",
+    "Partially stoppered vials move by conveyor directly onto the lyophilizer shelves."
+   ]
+  ],
+  "specTitle": "Filling at a glance",
+  "specBody": [
+   "Peristaltic and rotary piston pumps cover viscous, sensitive and low-volume products.",
+   "Media fills qualify the line twice a year."
+  ],
+  "spec": [
+   [
+    "Containers",
+    "Vials 2R to 50R"
+   ],
+   [
+    "Fill volume",
+    "0.2 mL to 50 mL"
+   ],
+   [
+    "Speed",
+    "up to 6,000 units/h"
+   ],
+   [
+    "Pump types",
+    "Peristaltic, rotary piston"
+   ],
+   [
+    "Closures",
+    "13 mm and 20 mm lyo stoppers"
+   ]
+  ],
+  "deliverables": [
+   "Filling batch record with checkweight data",
+   "Environmental monitoring summary",
+   "Media fill status for the line"
+  ]
+ },
+ "lyophilization": {
+  "title": "Lyophilization",
+  "icon": "i-lyo",
+  "step": 5,
+  "featured": true,
+  "card": "Cycle development, optimization and GMP freeze-drying from pilot lots to commercial batches.",
+  "headline": "Freeze-drying is what we do best.",
+  "lede": "We design cycles from your formulation's thermal data, scale them from pilot to production dryers, and run them under GMP with full process monitoring.",
+  "keyfacts": [
+   [
+    "Shelf range",
+    "−70 °C to +60 °C"
+   ],
+   [
+    "Shelf area",
+    "0.5 m² to 32 m²"
+   ],
+   [
+    "Condenser",
+    "−85 °C"
+   ],
+   [
+    "Residual moisture",
+    "< 1% typical"
+   ]
+  ],
+  "caps": [
+   [
+    "Thermal characterization",
+    "Freeze-dry microscopy and DSC find your collapse and glass transition temperatures before any cycle is written."
+   ],
+   [
+    "Cycle development and optimization",
+    "We build a recipe that keeps product temperature below collapse, then shorten primary drying without risking the cake."
+   ],
+   [
+    "Scale-up and GMP manufacturing",
+    "Pilot and production dryers share controls and sensors, so a cycle transfers with predictable results."
+   ]
+  ],
+  "specTitle": "Lyophilization at a glance",
+  "specBody": [
+   "Every dryer carries wireless product probes, capacitance and Pirani gauges, and pressure-rise testing to confirm the end of primary drying.",
+   "Controlled ice nucleation is available to make freezing uniform from vial to vial."
+  ],
+  "spec": [
+   [
+    "Dryers",
+    "Pilot 0.5 m², production 10 m² and 32 m²"
+   ],
+   [
+    "Shelf temperature",
+    "−70 °C to +60 °C"
+   ],
+   [
+    "Condenser",
+    "−85 °C, 50 kg ice capacity"
+   ],
+   [
+    "Chamber pressure",
+    "20 to 1,000 mTorr"
+   ],
+   [
+    "Process analytics",
+    "Product probes, Pirani vs. CM, pressure rise"
+   ],
+   [
+    "Nucleation",
+    "Controlled ice nucleation option"
+   ],
+   [
+    "Release tests",
+    "KF moisture, reconstitution, cake appearance"
+   ]
+  ],
+  "deliverables": [
+   "Thermal characterization report (Tc, Tg′)",
+   "Cycle development and optimization report",
+   "Engineering and GMP batch records with full cycle data",
+   "Residual moisture and reconstitution results"
+  ]
+ },
+ "capping": {
+  "title": "Capping",
+  "icon": "i-cap",
+  "step": 6,
+  "card": "Full stoppering inside the dryer, then aluminum crimp sealing with 100% container closure inspection.",
+  "headline": "Sealing that protects the cake you just dried.",
+  "lede": "Vials are fully stoppered inside the freeze-dryer under controlled atmosphere, then crimp sealed and inspected before they leave the clean zone.",
+  "keyfacts": [
+   [
+    "Stoppering",
+    "In-chamber, under N₂"
+   ],
+   [
+    "Seals",
+    "13 mm and 20 mm flip-off"
+   ],
+   [
+    "Inspection",
+    "100% visual"
+   ]
+  ],
+  "caps": [
+   [
+    "In-chamber stoppering",
+    "Shelves press stoppers home at the end of the cycle, under nitrogen or partial vacuum."
+   ],
+   [
+    "Crimp sealing",
+    "Aluminum and flip-off seals applied with residual seal force monitoring."
+   ],
+   [
+    "Container closure integrity",
+    "Headspace and leak testing confirm each seal keeps moisture and oxygen out."
+   ]
+  ],
+  "specTitle": "Capping at a glance",
+  "specBody": [
+   "Capping runs in a Grade A air supply to keep sealed vials clean.",
+   "Rejected vials are segregated and reconciled against the batch count."
+  ],
+  "spec": [
+   [
+    "Seal sizes",
+    "13 mm, 20 mm"
+   ],
+   [
+    "Seal types",
+    "Aluminum, flip-off, tear-off"
+   ],
+   [
+    "Speed",
+    "up to 6,000 units/h"
+   ],
+   [
+    "Integrity tests",
+    "Headspace O₂ and moisture, vacuum decay"
+   ],
+   [
+    "Inspection",
+    "100% visual, AQL sampling"
+   ]
+  ],
+  "deliverables": [
+   "Capping and inspection batch records",
+   "Container closure integrity data",
+   "Reject reconciliation"
+  ]
+ },
+ "labeling": {
+  "title": "Labeling",
+  "icon": "i-label",
+  "step": 7,
+  "card": "Vial labeling, serialization, cartoning and kit assembly, ready for clinical or commercial distribution.",
+  "headline": "Labeled, serialized and ready to ship.",
+  "lede": "We apply printed or variable-data labels, serialize to your market's rules, and pack units into cartons or kits for distribution.",
+  "keyfacts": [
+   [
+    "Labeling",
+    "Wrap-around, pressure-sensitive"
+   ],
+   [
+    "Print",
+    "Lot, expiry, 2D codes"
+   ],
+   [
+    "Packaging",
+    "Cartons, kits, trays"
+   ]
+  ],
+  "caps": [
+   [
+    "Vial labeling",
+    "Pressure-sensitive wrap labels with print-and-verify for lot and expiry data."
+   ],
+   [
+    "Serialization",
+    "2D DataMatrix codes and aggregation to meet DSCSA and EU FMD requirements."
+   ],
+   [
+    "Cartoning and kitting",
+    "Unit cartons, multi-component kits and clinical blinding where needed."
+   ]
+  ],
+  "specTitle": "Labeling at a glance",
+  "specBody": [
+   "Vision systems check every label for presence, position and print quality.",
+   "Label stock is controlled and reconciled against each batch."
+  ],
+  "spec": [
+   [
+    "Label types",
+    "Wrap-around, booklet, cold-chain"
+   ],
+   [
+    "Variable print",
+    "Lot, expiry, serial, 2D code"
+   ],
+   [
+    "Serialization",
+    "DSCSA, EU FMD"
+   ],
+   [
+    "Packaging",
+    "Cartons, kits, shippers"
+   ],
+   [
+    "Verification",
+    "100% camera inspection"
+   ]
+  ],
+  "deliverables": [
+   "Labeling and packaging batch records",
+   "Label reconciliation",
+   "Serialization data files"
+  ]
+ },
+ "rnd": {
+  "title": "R&D",
+  "icon": "i-rnd",
+  "support": true,
+  "card": "Formulation development, feasibility studies and stability programs that get your product ready to freeze-dry.",
+  "headline": "Formulation science before the first cycle.",
+  "lede": "Our scientists screen excipients, build stable formulations and run the studies that tell you whether, and how, your product should be lyophilized.",
+  "keyfacts": [
+   [
+    "Feasibility",
+    "Small-scale lyo screens"
+   ],
+   [
+    "Analytics",
+    "DSC, FDM, KF, HPLC"
+   ],
+   [
+    "Stability",
+    "ICH conditions"
+   ]
+  ],
+  "caps": [
+   [
+    "Formulation development",
+    "Excipient screening for bulking agents, cryoprotectants and buffers matched to your active."
+   ],
+   [
+    "Lyophilization feasibility",
+    "Small-scale freeze-drying runs show cake quality and stability before you commit to scale."
+   ],
+   [
+    "Stability and analytics",
+    "ICH stability storage with in-house methods for potency, moisture and degradation."
+   ]
+  ],
+  "specTitle": "R&D at a glance",
+  "specBody": [
+   "Development data feeds straight into our manufacturing team, so nothing is lost in transfer.",
+   "We can also support tech transfer of methods you already have."
+  ],
+  "spec": [
+   [
+    "Thermal analysis",
+    "DSC, freeze-dry microscopy"
+   ],
+   [
+    "Moisture",
+    "Karl Fischer, NIR"
+   ],
+   [
+    "Chromatography",
+    "HPLC, UPLC, SEC"
+   ],
+   [
+    "Stability chambers",
+    "ICH long-term and accelerated"
+   ],
+   [
+    "Reports",
+    "Development reports for regulatory filings"
+   ]
+  ],
+  "deliverables": [
+   "Formulation development report",
+   "Feasibility cycle data and cake images",
+   "Stability protocols and results"
+  ]
+ },
+ "synthesis": {
+  "title": "Custom Synthesis",
+  "icon": "i-synth",
+  "support": true,
+  "card": "Synthesis of small molecules, peptides, conjugates and reagents to your specification, from milligrams to kilograms.",
+  "headline": "Custom synthesis for the active you need.",
+  "lede": "When your active ingredient or reagent isn't available off the shelf, our chemists make it to your specification and hand it directly to our formulation team.",
+  "keyfacts": [
+   [
+    "Scale",
+    "mg to multi-kg"
+   ],
+   [
+    "Chemistries",
+    "Small molecules, peptides"
+   ],
+   [
+    "Purity",
+    "to your spec"
+   ]
+  ],
+  "caps": [
+   [
+    "Route design and scale-up",
+    "Synthetic routes chosen for yield, purity and a path to larger scale."
+   ],
+   [
+    "Peptides and conjugates",
+    "Solid-phase peptide synthesis, labeling and conjugation for diagnostics and therapeutics."
+   ],
+   [
+    "Reagents and standards",
+    "Reference standards, substrates and specialty reagents with full characterization."
+   ]
+  ],
+  "specTitle": "Custom synthesis at a glance",
+  "specBody": [
+   "Every lot ships with a certificate of analysis and supporting spectra.",
+   "Material made here can move straight into formulation and lyophilization without a third-party transfer."
+  ],
+  "spec": [
+   [
+    "Scale",
+    "Milligram to multi-kilogram"
+   ],
+   [
+    "Chemistries",
+    "Small molecule, peptide, conjugate"
+   ],
+   [
+    "Characterization",
+    "NMR, LC-MS, HPLC purity"
+   ],
+   [
+    "Documentation",
+    "CoA, spectra, batch records"
+   ],
+   [
+    "Quality level",
+    "Research grade to GMP"
+   ]
+  ],
+  "deliverables": [
+   "Synthesized material with certificate of analysis",
+   "Analytical characterization package",
+   "Route and process summary"
+  ]
+ }
+}
