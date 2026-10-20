@@ -6,6 +6,38 @@
     strip.scrollLeft = current.offsetLeft - (strip.clientWidth - current.offsetWidth) / 2;
   }
 
+  // Main-nav dropdowns and the mobile menu (Version 1 header).
+  var dds = Array.prototype.slice.call(document.querySelectorAll(".dd"));
+  function closeAll(except) {
+    dds.forEach(function (d) {
+      if (d === except) return;
+      d.classList.remove("open");
+      d.querySelector(".nav-top").setAttribute("aria-expanded", "false");
+    });
+  }
+  dds.forEach(function (d) {
+    var btn = d.querySelector(".nav-top");
+    btn.addEventListener("click", function (ev) {
+      ev.stopPropagation();
+      var open = !d.classList.contains("open");
+      closeAll(d);
+      d.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  document.addEventListener("click", function () { closeAll(null); });
+  document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") closeAll(null); });
+  var menuBtn = document.querySelector(".menu-btn");
+  if (menuBtn) {
+    var menu = document.getElementById(menuBtn.getAttribute("aria-controls"));
+    menuBtn.addEventListener("click", function () {
+      var open = menu.hidden;
+      menu.hidden = !open;
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+  }
+
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();
 

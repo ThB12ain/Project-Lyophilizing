@@ -177,12 +177,12 @@ def build_v2():
         pages[FILE[k]] = page(k, f"{s['title']} · {BRAND}", s["card"], service_body(k))
     pages["quality.html"] = page("quality", f"Quality · {BRAND}",
                                  "One quality system across every lyophilization stage.",
-                                 build.partial("quality").replace("Overview</a> / Quality", "Lyophilization</a> / Quality"))
+                                 build.partial("quality").replace("Home</a> » Quality", "Lyophilization</a> / Quality"))
     chips = "".join(f'<label><input type="checkbox" id="svc-{k}" name="services" value="{k}">{e(SERVICES[k]["title"])}</label>'
                     for k in ORDER)
     contact = (build.partial("contact")
                .replace("<legend>Services you need</legend>", "<legend>Services you need</legend>" + chips)
-               .replace("Overview</a> / Contact", "Lyophilization</a> / Contact"))
+               .replace("Home</a> » Contact", "Lyophilization</a> / Contact"))
     pages["contact.html"] = page("contact", f"Contact · {BRAND}",
                                  "Talk to a Sublyra Sciences lyophilization scientist.", contact, cta=False)
     for name, text in pages.items():

@@ -9,6 +9,7 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 | Page | File |
 |---|---|
 | Home | `index.html` |
+| Services overview | `services.html` |
 | Washing | `washing.html` |
 | Sterilizing | `sterilizing.html` |
 | Mixing | `mixing.html` |
@@ -18,8 +19,12 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 | Labeling | `labeling.html` |
 | R&D | `rnd.html` |
 | Custom Synthesis | `custom-synthesis.html` |
+| About us | `about.html` |
+| How we work | `how-we-work.html` |
 | Quality | `quality.html` |
 | Contact | `contact.html` |
+
+Version 1 follows the page structure of a full-service lyophilization CDMO site: an uppercase dropdown menu (Services, About, Resources), a home page with hero shortcuts, positioning, stats, service tiles, contact band and FAQ, and a "Headquartered in" block with accreditations above the footer on every page. The service tab strip under the menu is kept.
 
 ## Version 2: lyophilization only
 
@@ -43,11 +48,11 @@ Edit `tools/v2/services.json` or `tools/v2/partials/home.html`, then run `python
 
 ```
 assets/css/styles.css   all styling, brand tokens at the top
-assets/js/main.js       active-tab scrolling and the contact form
+assets/js/main.js       dropdown and phone menus, active-tab scrolling, the contact form
 assets/img/             logo, logo-white, logo-mark, favicon (SVG)
 tools/build.py          generates every .html page
 tools/services.json     copy and specs for the nine service pages
-tools/partials/         body content for home, quality and contact, plus the icon set
+tools/partials/         body content for home, services, about, how-we-work, quality and contact, plus the icon set
 ```
 
 ## Editing content
@@ -55,8 +60,8 @@ tools/partials/         body content for home, quality and contact, plus the ico
 The HTML pages are generated, so edit the sources and rebuild:
 
 1. Service copy, key facts and spec tables: `tools/services.json`
-2. Home, Quality or Contact page content: `tools/partials/*.html`
-3. Header, footer and the service-page layout: `tools/build.py`
+2. Home, Services, About, How we work, Quality or Contact page content: `tools/partials/*.html`
+3. Header, menus, footer, "Headquartered in" block and the service-page layout: `tools/build.py`
 
 Then run:
 
@@ -76,7 +81,8 @@ python3 -m http.server 8000
 
 ## Before launch
 
-- Replace the sample address, phone and email (`tools/partials/contact.html`, footer in `tools/build.py`).
+- Replace the sample address, phone and email (`tools/partials/contact.html`, footer and `COMPANY` block in `tools/build.py`).
+- Replace the sample accreditations (cGMP, ISO 13485, FDA registered) in the `COMPANY` block of `tools/build.py`.
 - Replace sample capacity figures in `tools/services.json` and the home page stats.
 - Confirm the compliance list on the home and Quality pages matches certifications actually held.
 - Connect the contact form in `assets/js/main.js` to a form service or CRM; it currently validates input but sends nothing.
