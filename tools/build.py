@@ -55,6 +55,12 @@ def head(title, description):
 """
 
 
+COMPANY_NAV = [("about.html", "About us", "about"), ("how-we-work.html", "How we work", "how-we-work"),
+               ("quality.html", "Quality", "quality")]
+RESOURCE_NAV = [("index.html#faq", "FAQ", None), ("contact.html", "Contact", "contact")]
+SERVICE_GROUPS = [("all", "services.html", "Services overview")]
+
+
 def header(active):
     def cur(k):
         return ' aria-current="page"' if k == active else ""
@@ -65,17 +71,41 @@ def header(active):
             tabs.append(f'<a href="{FILE[k]}" class="featured"{cur(k)}>{e(s["title"])}<span class="star">CORE</span></a>')
         else:
             tabs.append(f'<a href="{FILE[k]}"{cur(k)}>{e(s["title"])}</a>')
+    svc_links = (f'<a href="services.html"{cur("services")}>Services overview</a>'
+                 + "".join(f'<a href="{FILE[k]}"{cur(k)}>{e(SERVICES[k]["title"])}</a>' for k in ORDER))
+    co_links = "".join(f'<a href="{h}"{cur(k)}>{t}</a>' for h, t, k in COMPANY_NAV)
+    res_links = "".join(f'<a href="{h}"{cur(k) if k else ""}>{t}</a>' for h, t, k in RESOURCE_NAV)
+    in_services = active == "services" or active in SERVICES
+    in_company = active in {k for _, _, k in COMPANY_NAV}
+
+    def top(label, ident, links, on):
+        mark = ' data-active="true"' if on else ""
+        return f"""<div class="dd"{mark}>
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-{ident}">{label}<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-{ident}">{links}</div>
+        </div>"""
     return f"""<header class="site">
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="{BRAND} home">
       {LOGO_MARK}
       <span class="brand-name">Sublyra <span>Sciences</span></span>
     </a>
+    <nav class="mainnav" aria-label="Main">
+      <a class="nav-top" href="index.html"{cur("home")}>Home</a>
+      {top("Services", "services", svc_links, in_services)}
+      {top("About", "about", co_links, in_company)}
+      {top("Resources", "resources", res_links, active == "contact")}
+    </nav>
     <div class="bar-links">
-      <a class="plain" href="index.html"{cur("home")}>Overview</a>
-      <a class="plain" href="quality.html"{cur("quality")}>Quality</a>
-      <a class="plain" href="contact.html"{cur("contact")}>Contact</a>
-      <a class="btn btn-primary btn-talk" href="contact.html">Talk to an expert</a>
+      <a class="btn btn-primary btn-talk caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <div><h4>Services</h4>{svc_links}</div>
+      <div><h4>About</h4>{co_links}</div>
+      <div><h4>Resources</h4>{res_links}</div>
     </div>
   </div>
   <div class="tabs-scroll">
@@ -89,36 +119,73 @@ def header(active):
 
 CTA = """<section class="cta-band on-ink">
     <div class="wrap">
-      <div><h2>Let's plan your next batch.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
-      <a class="btn btn-primary" href="contact.html">Talk to an expert</a>
+      <div><p class="eyebrow">Contact</p><h2>Speak with one of our experts.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
+      <a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
     </div>
   </section>"""
 
-FOOTER = f"""<footer class="site">
+DOT_MAP = "".join(
+    f'<circle cx="{14 + c * 12}" cy="{14 + r * 12}" r="2.2"/>'
+    for r, row in enumerate([
+        "....xxxxxxxxxxxxxxx.......",
+        "...xxxxxxxxxxxxxxxxxxx....",
+        "..xxxxxxxxxxxxxxxxxxxxxxx.",
+        "..xxxxxxxxxxxxxxxxxxxxxxxx",
+        "...xxxxxxxxxxxxxxxxxxxxxx.",
+        "...xxxxxxxxxxxxxxxxxxxxx..",
+        "....xxxxxxxxxxxxxxxxxxx...",
+        ".....xxxxxxxxxxxxx..xxx...",
+        "........xxxxx........xx...",
+    ])
+    for c, ch in enumerate(row) if ch == "x"
+)
+
+COMPANY = f"""<section class="company">
+    <div class="wrap company-grid">
+      <div class="hq">
+        <p class="eyebrow">Find us</p>
+        <h2>Headquartered in Anytown, California</h2>
+        <svg class="dot-map" viewBox="0 0 330 124" role="img" aria-label="Map of the United States with our California site marked">
+          <g class="dots">{DOT_MAP}</g>
+          <circle class="pin-ring" cx="50" cy="74" r="9"/><circle class="pin" cx="50" cy="74" r="4.5"/>
+        </svg>
+      </div>
+      <div class="company-copy">
+        <p>Sublyra Sciences works as an extension of your team. We take on the lyophilization and fill-finish steps that are hardest to get right, lower the risk in your program and help you reach the market on time.</p>
+        <a class="btn btn-solid caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+        <div class="accred">
+          <p class="eyebrow">Accreditations</p>
+          <ul><li>cGMP</li><li>ISO 13485</li><li>FDA registered</li></ul>
+        </div>
+        <div class="address"><p class="eyebrow">Address</p><p>1200 Example Way, Suite 100<br>Anytown, CA 90000</p></div>
+      </div>
+    </div>
+  </section>"""
+
+
+def footer():
+    svc = "".join(f'<li><a href="{FILE[k]}">{e(SERVICES[k]["title"])}</a></li>' for k in ORDER)
+    co = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t, _ in COMPANY_NAV) + '<li><a href="contact.html">Contact</a></li>'
+    return f"""<footer class="site">
   <div class="wrap">
     <div class="foot-grid">
       <div>
         <a class="brand" href="index.html">{LOGO_MARK}<span class="brand-name">Sublyra <span>Sciences</span></span></a>
-        <p style="margin-top:12px;max-width:28em">Contract lyophilization and fill-finish, from component washing to labeled product.</p>
+        <p style="margin-top:12px;max-width:28em">Lyophilization-led contract manufacturing, from component washing to labeled product.</p>
         <p style="margin-top:12px">1200 Example Way, Anytown, CA 90000</p>
       </div>
-      <div><h4>Process</h4><ul>
-        <li><a href="washing.html">Washing</a></li><li><a href="sterilizing.html">Sterilizing</a></li><li><a href="mixing.html">Mixing</a></li><li><a href="filling.html">Filling</a></li>
-      </ul></div>
-      <div><h4>Finish</h4><ul>
-        <li><a href="lyophilization.html">Lyophilization</a></li><li><a href="capping.html">Capping</a></li><li><a href="labeling.html">Labeling</a></li>
-      </ul></div>
-      <div><h4>Science</h4><ul>
-        <li><a href="rnd.html">R&amp;D</a></li><li><a href="custom-synthesis.html">Custom synthesis</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li>
-      </ul></div>
+      <div><h4>Company</h4><ul>{co}</ul></div>
+      <div style="grid-column:span 2"><h4>Services</h4><ul class="two-up"><li><a href="services.html">Services overview</a></li>{svc}</ul></div>
     </div>
-    <div class="foot-legal"><span>© <span data-year>2026</span> {BRAND}</span><span>Privacy · Terms · Accessibility</span></div>
+    <div class="foot-legal"><span>© <span data-year>2026</span> {BRAND}</span><span>Privacy Policy · Cookie Policy · Accessibility</span></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
 """
+
+
 
 
 def chain(active=None):
@@ -134,25 +201,14 @@ def dl(pairs):
 
 
 def service_grid():
-    lyo = SERVICES["lyophilization"]
-    out = [f"""<a class="svc feature" href="{FILE['lyophilization']}">
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span class="tag">Our core specialty</span>
-            <svg aria-hidden="true"><use href="#i-lyo"/></svg>
-            <h3>Lyophilization</h3>
-            <p>{e(lyo['card'])} Most programs start here and add the steps around it.</p>
-            <span class="more">See lyophilization capabilities →</span>
-          </div>
-          <dl class="feature-specs">{dl(lyo['keyfacts'])}</dl>
-        </a>"""]
+    out = []
     for k in ORDER:
-        if k == "lyophilization":
-            continue
-        s = SERVICES[k]
-        out.append(f"""<a class="svc" href="{FILE[k]}">
-          <div class="top"><svg aria-hidden="true"><use href="#{s['icon']}"/></svg></div>
-          <h3>{e(s['title'])}</h3><p>{e(s['card'])}</p><span class="more">Learn more →</span></a>""")
-    return '<div class="svc-grid">' + "\n        ".join(out) + "</div>"
+        sv = SERVICES[k]
+        core = '<span class="core-tag">Core</span>' if sv.get("featured") else ""
+        out.append(f"""<a class="svc-tile{' is-core' if sv.get('featured') else ''}" href="{FILE[k]}">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#{sv['icon']}"/></svg>{core}<svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>{e(sv['title'])}</h3><p>{e(sv['card'])}</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>""")
+    return '<div class="svc-tiles">' + "\n        ".join(out) + "</div>"
 
 
 ICONS = (TOOLS / "partials" / "icons.svg").read_text()
@@ -169,9 +225,10 @@ def service_body(k):
     return f"""<section class="page-hero on-ink">
     <div class="wrap">
       <div>
-        <p class="crumb"><a href="index.html">Services</a> / {e(s['title'])}</p>
+        <p class="crumb"><a href="index.html">Home</a> » <a href="services.html">Services</a> » {e(s['title'])}</p>
         <h1>{e(s['headline'])}</h1>
         <p class="lede">{e(s['lede'])}</p>
+        <div class="ctas"><a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a></div>
       </div>
       <dl class="keyfacts">{dl(s['keyfacts'])}</dl>
     </div>
@@ -191,7 +248,7 @@ def service_body(k):
   </section>
   <section class="band">
     <div class="wrap two-col">
-      <div><p class="eyebrow">What you get</p><h2>Deliverables</h2></div>
+      <div><p class="eyebrow">Why Sublyra</p><h2>Why choose us for {e(s['title'].lower() if s['title'] != 'R&D' else s['title'])}</h2><p style="color:var(--muted);margin-top:14px">Every project includes these deliverables.</p></div>
       <ul class="checklist">{deliv}</ul>
     </div>
   </section>
@@ -206,9 +263,26 @@ def service_body(k):
   </section>"""
 
 
+def services_overview_list():
+    return "".join(f'<li><a href="{FILE[k]}">{e(SERVICES[k]["title"])}</a></li>' for k in ORDER)
+
+
+def services_overview_rows():
+    rows = []
+    for i, k in enumerate(ORDER, 1):
+        sv = SERVICES[k]
+        rows.append(f"""<article class="ov-row">
+          <span class="ov-num">{i:02d}</span>
+          <div class="ov-icon"><svg aria-hidden="true"><use href="#{sv['icon']}"/></svg></div>
+          <div><h3><a href="{FILE[k]}">{e(sv['title'])}</a></h3><p>{e(sv['lede'])}</p></div>
+          <a class="more caps" href="{FILE[k]}">More <span aria-hidden="true">›</span></a>
+        </article>""")
+    return "".join(rows)
+
+
 def page(active, title, description, body, cta=True):
     return (head(title, description) + ICONS + header(active)
-            + f'<main id="main">\n  {body}\n  {CTA if cta else ""}\n</main>\n' + FOOTER)
+            + f'<main id="main">\n  {body}\n  {CTA if cta else ""}\n  {COMPANY}\n</main>\n' + footer())
 
 
 def partial(name):
@@ -223,10 +297,18 @@ def build():
     pages["index.html"] = page(
         "home", BRAND,
         "Sublyra Sciences is a contract manufacturer specializing in lyophilization, with washing, "
-        "sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.", home)
+        "sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.", home, cta=False)
     for k in ORDER:
         s = SERVICES[k]
         pages[FILE[k]] = page(k, f"{s['title']} · {BRAND}", s["card"], service_body(k))
+    overview = partial("services").replace("<!--SERVICE-LIST-->", services_overview_list()).replace("<!--SERVICE-ROWS-->", services_overview_rows())
+    pages["services.html"] = page("services", f"Services · {BRAND}",
+                                  "End-to-end contract manufacturing services led by lyophilization.", overview)
+    pages["about.html"] = page("about", f"About us · {BRAND}",
+                               "Who Sublyra Sciences is, and why we built a lyophilization-led CDMO.", partial("about"))
+    pages["how-we-work.html"] = page("how-we-work", f"How we work · {BRAND}",
+                                     "How Sublyra Sciences runs programs: candor, communication and program management.",
+                                     partial("how-we-work"))
     pages["quality.html"] = page("quality", f"Quality · {BRAND}",
                                  "One quality system across every manufacturing step.", partial("quality"))
     chips = "".join(f'<label><input type="checkbox" id="svc-{k}" name="services" value="{k}">{e(SERVICES[k]["title"])}</label>'

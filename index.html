@@ -37,11 +37,31 @@
       </svg>
       <span class="brand-name">Sublyra <span>Sciences</span></span>
     </a>
+    <nav class="mainnav" aria-label="Main">
+      <a class="nav-top" href="index.html" aria-current="page">Home</a>
+      <div class="dd">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-services">Services<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-services"><a href="services.html">Services overview</a><a href="washing.html">Washing</a><a href="sterilizing.html">Sterilizing</a><a href="mixing.html">Mixing</a><a href="filling.html">Filling</a><a href="lyophilization.html">Lyophilization</a><a href="capping.html">Capping</a><a href="labeling.html">Labeling</a><a href="rnd.html">R&amp;D</a><a href="custom-synthesis.html">Custom Synthesis</a></div>
+        </div>
+      <div class="dd">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-about">About<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-about"><a href="about.html">About us</a><a href="how-we-work.html">How we work</a><a href="quality.html">Quality</a></div>
+        </div>
+      <div class="dd">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-resources">Resources<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-resources"><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
     <div class="bar-links">
-      <a class="plain" href="index.html" aria-current="page">Overview</a>
-      <a class="plain" href="quality.html">Quality</a>
-      <a class="plain" href="contact.html">Contact</a>
-      <a class="btn btn-primary btn-talk" href="contact.html">Talk to an expert</a>
+      <a class="btn btn-primary btn-talk caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <div><h4>Services</h4><a href="services.html">Services overview</a><a href="washing.html">Washing</a><a href="sterilizing.html">Sterilizing</a><a href="mixing.html">Mixing</a><a href="filling.html">Filling</a><a href="lyophilization.html">Lyophilization</a><a href="capping.html">Capping</a><a href="labeling.html">Labeling</a><a href="rnd.html">R&amp;D</a><a href="custom-synthesis.html">Custom Synthesis</a></div>
+      <div><h4>About</h4><a href="about.html">About us</a><a href="how-we-work.html">How we work</a><a href="quality.html">Quality</a></div>
+      <div><h4>Resources</h4><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
     </div>
   </div>
   <div class="tabs-scroll">
@@ -62,18 +82,17 @@
   <section class="hero on-ink">
       <div class="wrap">
         <div>
-          <p class="eyebrow">Lyophilization CDMO · Fill-finish under one roof</p>
-          <h1>From raw vial to <em>lyophilized</em>, sealed and labeled product.</h1>
-          <p class="lede">We wash, sterilize, compound, fill, lyophilize, cap and label your product at one site, under one quality system. Our formulation and synthesis teams can start the work before you have a cycle.</p>
+          <p class="eyebrow">Lyophilization CDMO</p>
+          <h1>Advanced lyophilization and <em>contract manufacturing</em> services</h1>
+          <p class="lede">For life-science, diagnostic, biologic and drug-product innovators who need one partner from component washing to labeled, lyophilized product.</p>
           <div class="ctas">
-            <a class="btn btn-primary" href="contact.html">Talk to an expert</a>
-            <a class="btn btn-ghost" href="lyophilization.html">Explore lyophilization</a>
+            <a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
           </div>
-          <div class="hero-chips" aria-label="Popular services">
-            <a href="lyophilization.html">Cycle development</a>
-            <a href="filling.html">Aseptic vial filling</a>
-            <a href="rnd.html">Formulation R&amp;D</a>
-          </div>
+          <ul class="shortcuts" aria-label="Popular services">
+            <li><a href="lyophilization.html">Lyophilization <span aria-hidden="true">›</span></a></li>
+            <li><a href="filling.html">Aseptic filling <span aria-hidden="true">›</span></a></li>
+            <li><a href="custom-synthesis.html">Custom synthesis <span aria-hidden="true">›</span></a></li>
+          </ul>
         </div>
         <figure class="cycle" style="margin:0">
           <div class="cycle-head"><strong>A typical lyophilization cycle</strong><span>shelf vs. product temperature</span></div>
@@ -116,16 +135,31 @@
     </section>
 
     <section class="band">
-      <div class="wrap">
-        <div class="section-head">
-          <div><p class="eyebrow">One partner, one site</p><h2>A single chain of custody from component to carton.</h2></div>
-          <p>Most lyophilized programs pass through three or four vendors before a vial ships. Each handoff adds a tech transfer, a quality agreement and weeks on the schedule. We built the whole chain in one facility so your product never leaves our control.</p>
+      <div class="wrap positioning">
+        <div>
+          <p class="eyebrow">A lyophilization-led CDMO</p>
+          <h2>Customer-first manufacturing for products that have to stay stable.</h2>
+          <p>Sublyra Sciences develops and manufactures lyophilized products for companies that cannot afford a failed batch. We wash, sterilize, compound, fill, lyophilize, cap and label at one site, under one quality system, with scientists who answer your questions directly.</p>
+          <a class="btn btn-solid caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
         </div>
-        <div class="stats">
-          <div class="stat"><b>9</b><span>services under one quality system</span></div>
-          <div class="stat"><b>−70 °C</b><span>lowest shelf temperature</span></div>
-          <div class="stat"><b>32 m²</b><span>largest lyophilizer shelf area</span></div>
-          <div class="stat"><b>2R–50R</b><span>vial formats on one line</span></div>
+        <div class="positioning-art"><svg class="vial-art" viewBox="0 0 320 220" role="img" aria-label="Illustration of lyophilized vials on a shelf">
+            <rect x="0" y="186" width="320" height="10" rx="3" class="va-shelf"/>
+            <g class="va-vial"><rect x="22" y="58" width="44" height="12" rx="3"/><path d="M26 70v104a8 8 0 0 0 8 8h20a8 8 0 0 0 8-8V70"/></g><rect x="30" y="140" width="28" height="36" rx="3" class="va-cake"/>
+            <g class="va-vial"><rect x="96" y="40" width="52" height="14" rx="3"/><path d="M101 54v120a9 9 0 0 0 9 9h24a9 9 0 0 0 9-9V54"/></g><rect x="108" y="130" width="28" height="46" rx="3" class="va-cake"/>
+            <g class="va-vial"><rect x="178" y="58" width="44" height="12" rx="3"/><path d="M182 70v104a8 8 0 0 0 8 8h20a8 8 0 0 0 8-8V70"/></g><rect x="186" y="146" width="28" height="30" rx="3" class="va-cake"/>
+            <g class="va-vial"><rect x="252" y="76" width="40" height="11" rx="3"/><path d="M256 87v88a7 7 0 0 0 7 7h18a7 7 0 0 0 7-7V87"/></g><rect x="262" y="150" width="20" height="26" rx="3" class="va-cake"/>
+            <g class="va-vapor"><circle cx="122" cy="26" r="4"/><circle cx="134" cy="14" r="3"/><circle cx="144" cy="5" r="2.2"/></g>
+          </svg></div>
+      </div>
+    </section>
+
+    <section class="band stats-band">
+      <div class="wrap">
+        <div class="stats caps-stats">
+          <div class="stat"><b>9</b><span>Services under one roof</span></div>
+          <div class="stat"><b>4</b><span>Lyophilizers, lab to production</span></div>
+          <div class="stat"><b>−70 °C</b><span>Lowest shelf temperature</span></div>
+          <div class="stat"><b>1</b><span>Quality system for every step</span></div>
         </div>
       </div>
     </section>
@@ -133,43 +167,36 @@
     <section class="band alt">
       <div class="wrap">
         <div class="section-head">
-          <div><p class="eyebrow">Services</p><h2>Everything a lyophilized product needs.</h2></div>
-          <p>Pick a single step or hand us the whole program. Every service runs on the same batch record, so moving from one to the next needs no new paperwork.</p>
+          <div><h2 class="link-head"><a href="services.html">Services <span aria-hidden="true">›</span></a></h2></div>
+          <p>An end-to-end range of services, from formulation to labeled product, with lyophilization at the center.</p>
         </div>
-        <div class="svc-grid"><a class="svc feature" href="lyophilization.html">
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span class="tag">Our core specialty</span>
-            <svg aria-hidden="true"><use href="#i-lyo"/></svg>
-            <h3>Lyophilization</h3>
-            <p>Cycle development, optimization and GMP lyophilization from pilot lots to commercial batches. Most programs start here and add the steps around it.</p>
-            <span class="more">See lyophilization capabilities →</span>
-          </div>
-          <dl class="feature-specs"><div><dt>Shelf range</dt><dd>−70 °C to +60 °C</dd></div><div><dt>Shelf area</dt><dd>0.5 m² to 32 m²</dd></div><div><dt>Condenser</dt><dd>−85 °C</dd></div><div><dt>Residual moisture</dt><dd>&lt; 1% typical</dd></div></dl>
-        </a>
-        <a class="svc" href="washing.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-wash"/></svg></div>
-          <h3>Washing</h3><p>Validated washing of vials, stoppers and components to remove particulates and endotoxin before sterilization.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="sterilizing.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-steril"/></svg></div>
-          <h3>Sterilizing</h3><p>Dry-heat depyrogenation, steam sterilization and VHP decontamination for components and equipment.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="mixing.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-mix"/></svg></div>
-          <h3>Mixing</h3><p>GMP compounding and sterile filtration of solutions and suspensions from bench scale to production tanks.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="filling.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-fill"/></svg></div>
-          <h3>Filling</h3><p>Isolator-based aseptic filling of vials with partial stoppering for lyophilization.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="capping.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-cap"/></svg></div>
-          <h3>Capping</h3><p>Full stoppering inside the dryer, then aluminum crimp sealing with 100% container closure inspection.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="labeling.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-label"/></svg></div>
-          <h3>Labeling</h3><p>Vial labeling, serialization, cartoning and kit assembly, ready for clinical or commercial distribution.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="rnd.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-rnd"/></svg></div>
-          <h3>R&amp;D</h3><p>Formulation development, feasibility studies and stability programs that get your product ready to lyophilize.</p><span class="more">Learn more →</span></a>
-        <a class="svc" href="custom-synthesis.html">
-          <div class="top"><svg aria-hidden="true"><use href="#i-synth"/></svg></div>
-          <h3>Custom Synthesis</h3><p>Synthesis of small molecules, peptides, conjugates and reagents to your specification, from milligrams to kilograms.</p><span class="more">Learn more →</span></a></div>
+        <div class="svc-tiles"><a class="svc-tile" href="washing.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-wash"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Washing</h3><p>Validated washing of vials, stoppers and components to remove particulates and endotoxin before sterilization.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="sterilizing.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-steril"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Sterilizing</h3><p>Dry-heat depyrogenation, steam sterilization and VHP decontamination for components and equipment.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="mixing.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-mix"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Mixing</h3><p>GMP compounding and sterile filtration of solutions and suspensions from bench scale to production tanks.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="filling.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-fill"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Filling</h3><p>Isolator-based aseptic filling of vials with partial stoppering for lyophilization.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile is-core" href="lyophilization.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-lyo"/></svg><span class="core-tag">Core</span><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Lyophilization</h3><p>Cycle development, optimization and GMP lyophilization from pilot lots to commercial batches.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="capping.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-cap"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Capping</h3><p>Full stoppering inside the dryer, then aluminum crimp sealing with 100% container closure inspection.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="labeling.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-label"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Labeling</h3><p>Vial labeling, serialization, cartoning and kit assembly, ready for clinical or commercial distribution.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="rnd.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-rnd"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>R&amp;D</h3><p>Formulation development, feasibility studies and stability programs that get your product ready to lyophilize.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a>
+        <a class="svc-tile" href="custom-synthesis.html">
+          <span class="tile-top"><svg aria-hidden="true"><use href="#i-synth"/></svg><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Custom Synthesis</h3><p>Synthesis of small molecules, peptides, conjugates and reagents to your specification, from milligrams to kilograms.</p><span class="more caps">More <span aria-hidden="true">›</span></span></a></div>
       </div>
     </section>
 
@@ -188,6 +215,7 @@
       <div class="wrap">
         <div class="section-head">
           <div><p class="eyebrow">Why one roof</p><h2>Fewer handoffs, fewer surprises.</h2></div>
+          <p>Most lyophilized programs pass through three or four vendors before a vial ships. We built the whole chain in one facility.</p>
         </div>
         <div class="why">
           <div><h3>One tech transfer</h3><p>Your process moves once, into one team. The people who develop your cycle are the people who run it at scale.</p></div>
@@ -197,27 +225,17 @@
       </div>
     </section>
 
-    <section class="band" id="quality-anchor">
-      <div class="wrap quality">
-        <div>
-          <p class="eyebrow">Quality and compliance</p>
-          <h2 style="font-size:clamp(28px,3.4vw,40px);font-weight:700;margin-top:10px">Built for regulated products from the first batch.</h2>
-          <p style="color:var(--muted);margin-top:16px;max-width:34em">Our facility, equipment and records are designed around the regulations that govern sterile and lyophilized drug products, diagnostics and research reagents.</p>
-        </div>
-        <ul>
-          <li><b>21 CFR 210/211</b><span>cGMP for finished pharmaceuticals</span></li>
-          <li><b>EU GMP Annex 1</b><span>Sterile manufacturing and contamination control</span></li>
-          <li><b>ISO 13485</b><span>Quality management for diagnostic devices</span></li>
-          <li><b>21 CFR Part 11</b><span>Validated electronic batch records and signatures</span></li>
-          <li><b>ISO 14644 Grade A/B</b><span>Classified cleanrooms with continuous monitoring</span></li>
-        </ul>
+    <section class="cta-band on-ink">
+      <div class="wrap">
+        <div><p class="eyebrow">Contact</p><h2>Speak with one of our experts.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
+        <a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
       </div>
     </section>
 
-    <section class="band alt">
+    <section class="band" id="faq">
       <div class="wrap">
         <div class="section-head">
-          <div><p class="eyebrow">FAQ</p><h2>Questions we hear about lyophilization.</h2></div>
+          <div><p class="eyebrow">FAQ</p><h2>Frequently asked questions</h2></div>
         </div>
         <div class="faq">
           <details><summary>Does my product need to be lyophilized?</summary><p>Lyophilization suits products that lose activity in liquid form, such as proteins, enzymes, vaccines, diagnostic reagents and some small molecules. Removing water stops most degradation and often lets the product ship and store at room temperature. Our R&amp;D team can run a short feasibility study to tell you whether the gain in stability is worth the added step.</p></details>
@@ -229,10 +247,26 @@
       </div>
     </section>
 
-  <section class="cta-band on-ink">
-    <div class="wrap">
-      <div><h2>Let's plan your next batch.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
-      <a class="btn btn-primary" href="contact.html">Talk to an expert</a>
+  
+  <section class="company">
+    <div class="wrap company-grid">
+      <div class="hq">
+        <p class="eyebrow">Find us</p>
+        <h2>Headquartered in Anytown, California</h2>
+        <svg class="dot-map" viewBox="0 0 330 124" role="img" aria-label="Map of the United States with our California site marked">
+          <g class="dots"><circle cx="62" cy="14" r="2.2"/><circle cx="74" cy="14" r="2.2"/><circle cx="86" cy="14" r="2.2"/><circle cx="98" cy="14" r="2.2"/><circle cx="110" cy="14" r="2.2"/><circle cx="122" cy="14" r="2.2"/><circle cx="134" cy="14" r="2.2"/><circle cx="146" cy="14" r="2.2"/><circle cx="158" cy="14" r="2.2"/><circle cx="170" cy="14" r="2.2"/><circle cx="182" cy="14" r="2.2"/><circle cx="194" cy="14" r="2.2"/><circle cx="206" cy="14" r="2.2"/><circle cx="218" cy="14" r="2.2"/><circle cx="230" cy="14" r="2.2"/><circle cx="50" cy="26" r="2.2"/><circle cx="62" cy="26" r="2.2"/><circle cx="74" cy="26" r="2.2"/><circle cx="86" cy="26" r="2.2"/><circle cx="98" cy="26" r="2.2"/><circle cx="110" cy="26" r="2.2"/><circle cx="122" cy="26" r="2.2"/><circle cx="134" cy="26" r="2.2"/><circle cx="146" cy="26" r="2.2"/><circle cx="158" cy="26" r="2.2"/><circle cx="170" cy="26" r="2.2"/><circle cx="182" cy="26" r="2.2"/><circle cx="194" cy="26" r="2.2"/><circle cx="206" cy="26" r="2.2"/><circle cx="218" cy="26" r="2.2"/><circle cx="230" cy="26" r="2.2"/><circle cx="242" cy="26" r="2.2"/><circle cx="254" cy="26" r="2.2"/><circle cx="266" cy="26" r="2.2"/><circle cx="38" cy="38" r="2.2"/><circle cx="50" cy="38" r="2.2"/><circle cx="62" cy="38" r="2.2"/><circle cx="74" cy="38" r="2.2"/><circle cx="86" cy="38" r="2.2"/><circle cx="98" cy="38" r="2.2"/><circle cx="110" cy="38" r="2.2"/><circle cx="122" cy="38" r="2.2"/><circle cx="134" cy="38" r="2.2"/><circle cx="146" cy="38" r="2.2"/><circle cx="158" cy="38" r="2.2"/><circle cx="170" cy="38" r="2.2"/><circle cx="182" cy="38" r="2.2"/><circle cx="194" cy="38" r="2.2"/><circle cx="206" cy="38" r="2.2"/><circle cx="218" cy="38" r="2.2"/><circle cx="230" cy="38" r="2.2"/><circle cx="242" cy="38" r="2.2"/><circle cx="254" cy="38" r="2.2"/><circle cx="266" cy="38" r="2.2"/><circle cx="278" cy="38" r="2.2"/><circle cx="290" cy="38" r="2.2"/><circle cx="302" cy="38" r="2.2"/><circle cx="38" cy="50" r="2.2"/><circle cx="50" cy="50" r="2.2"/><circle cx="62" cy="50" r="2.2"/><circle cx="74" cy="50" r="2.2"/><circle cx="86" cy="50" r="2.2"/><circle cx="98" cy="50" r="2.2"/><circle cx="110" cy="50" r="2.2"/><circle cx="122" cy="50" r="2.2"/><circle cx="134" cy="50" r="2.2"/><circle cx="146" cy="50" r="2.2"/><circle cx="158" cy="50" r="2.2"/><circle cx="170" cy="50" r="2.2"/><circle cx="182" cy="50" r="2.2"/><circle cx="194" cy="50" r="2.2"/><circle cx="206" cy="50" r="2.2"/><circle cx="218" cy="50" r="2.2"/><circle cx="230" cy="50" r="2.2"/><circle cx="242" cy="50" r="2.2"/><circle cx="254" cy="50" r="2.2"/><circle cx="266" cy="50" r="2.2"/><circle cx="278" cy="50" r="2.2"/><circle cx="290" cy="50" r="2.2"/><circle cx="302" cy="50" r="2.2"/><circle cx="314" cy="50" r="2.2"/><circle cx="50" cy="62" r="2.2"/><circle cx="62" cy="62" r="2.2"/><circle cx="74" cy="62" r="2.2"/><circle cx="86" cy="62" r="2.2"/><circle cx="98" cy="62" r="2.2"/><circle cx="110" cy="62" r="2.2"/><circle cx="122" cy="62" r="2.2"/><circle cx="134" cy="62" r="2.2"/><circle cx="146" cy="62" r="2.2"/><circle cx="158" cy="62" r="2.2"/><circle cx="170" cy="62" r="2.2"/><circle cx="182" cy="62" r="2.2"/><circle cx="194" cy="62" r="2.2"/><circle cx="206" cy="62" r="2.2"/><circle cx="218" cy="62" r="2.2"/><circle cx="230" cy="62" r="2.2"/><circle cx="242" cy="62" r="2.2"/><circle cx="254" cy="62" r="2.2"/><circle cx="266" cy="62" r="2.2"/><circle cx="278" cy="62" r="2.2"/><circle cx="290" cy="62" r="2.2"/><circle cx="302" cy="62" r="2.2"/><circle cx="50" cy="74" r="2.2"/><circle cx="62" cy="74" r="2.2"/><circle cx="74" cy="74" r="2.2"/><circle cx="86" cy="74" r="2.2"/><circle cx="98" cy="74" r="2.2"/><circle cx="110" cy="74" r="2.2"/><circle cx="122" cy="74" r="2.2"/><circle cx="134" cy="74" r="2.2"/><circle cx="146" cy="74" r="2.2"/><circle cx="158" cy="74" r="2.2"/><circle cx="170" cy="74" r="2.2"/><circle cx="182" cy="74" r="2.2"/><circle cx="194" cy="74" r="2.2"/><circle cx="206" cy="74" r="2.2"/><circle cx="218" cy="74" r="2.2"/><circle cx="230" cy="74" r="2.2"/><circle cx="242" cy="74" r="2.2"/><circle cx="254" cy="74" r="2.2"/><circle cx="266" cy="74" r="2.2"/><circle cx="278" cy="74" r="2.2"/><circle cx="290" cy="74" r="2.2"/><circle cx="62" cy="86" r="2.2"/><circle cx="74" cy="86" r="2.2"/><circle cx="86" cy="86" r="2.2"/><circle cx="98" cy="86" r="2.2"/><circle cx="110" cy="86" r="2.2"/><circle cx="122" cy="86" r="2.2"/><circle cx="134" cy="86" r="2.2"/><circle cx="146" cy="86" r="2.2"/><circle cx="158" cy="86" r="2.2"/><circle cx="170" cy="86" r="2.2"/><circle cx="182" cy="86" r="2.2"/><circle cx="194" cy="86" r="2.2"/><circle cx="206" cy="86" r="2.2"/><circle cx="218" cy="86" r="2.2"/><circle cx="230" cy="86" r="2.2"/><circle cx="242" cy="86" r="2.2"/><circle cx="254" cy="86" r="2.2"/><circle cx="266" cy="86" r="2.2"/><circle cx="278" cy="86" r="2.2"/><circle cx="74" cy="98" r="2.2"/><circle cx="86" cy="98" r="2.2"/><circle cx="98" cy="98" r="2.2"/><circle cx="110" cy="98" r="2.2"/><circle cx="122" cy="98" r="2.2"/><circle cx="134" cy="98" r="2.2"/><circle cx="146" cy="98" r="2.2"/><circle cx="158" cy="98" r="2.2"/><circle cx="170" cy="98" r="2.2"/><circle cx="182" cy="98" r="2.2"/><circle cx="194" cy="98" r="2.2"/><circle cx="206" cy="98" r="2.2"/><circle cx="218" cy="98" r="2.2"/><circle cx="254" cy="98" r="2.2"/><circle cx="266" cy="98" r="2.2"/><circle cx="278" cy="98" r="2.2"/><circle cx="110" cy="110" r="2.2"/><circle cx="122" cy="110" r="2.2"/><circle cx="134" cy="110" r="2.2"/><circle cx="146" cy="110" r="2.2"/><circle cx="158" cy="110" r="2.2"/><circle cx="266" cy="110" r="2.2"/><circle cx="278" cy="110" r="2.2"/></g>
+          <circle class="pin-ring" cx="50" cy="74" r="9"/><circle class="pin" cx="50" cy="74" r="4.5"/>
+        </svg>
+      </div>
+      <div class="company-copy">
+        <p>Sublyra Sciences works as an extension of your team. We take on the lyophilization and fill-finish steps that are hardest to get right, lower the risk in your program and help you reach the market on time.</p>
+        <a class="btn btn-solid caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+        <div class="accred">
+          <p class="eyebrow">Accreditations</p>
+          <ul><li>cGMP</li><li>ISO 13485</li><li>FDA registered</li></ul>
+        </div>
+        <div class="address"><p class="eyebrow">Address</p><p>1200 Example Way, Suite 100<br>Anytown, CA 90000</p></div>
+      </div>
     </div>
   </section>
 </main>
@@ -245,20 +279,13 @@
         <path class="cake" d="M20 17.2l5 2.9v5.8l-5 2.9-5-2.9v-5.8z"/>
         <circle class="vapor" cx="25.6" cy="10.4" r="2"/><circle class="vapor" cx="30.6" cy="7.6" r="1.55"/><circle class="vapor" cx="34.6" cy="4.6" r="1.15"/>
       </svg><span class="brand-name">Sublyra <span>Sciences</span></span></a>
-        <p style="margin-top:12px;max-width:28em">Contract lyophilization and fill-finish, from component washing to labeled product.</p>
+        <p style="margin-top:12px;max-width:28em">Lyophilization-led contract manufacturing, from component washing to labeled product.</p>
         <p style="margin-top:12px">1200 Example Way, Anytown, CA 90000</p>
       </div>
-      <div><h4>Process</h4><ul>
-        <li><a href="washing.html">Washing</a></li><li><a href="sterilizing.html">Sterilizing</a></li><li><a href="mixing.html">Mixing</a></li><li><a href="filling.html">Filling</a></li>
-      </ul></div>
-      <div><h4>Finish</h4><ul>
-        <li><a href="lyophilization.html">Lyophilization</a></li><li><a href="capping.html">Capping</a></li><li><a href="labeling.html">Labeling</a></li>
-      </ul></div>
-      <div><h4>Science</h4><ul>
-        <li><a href="rnd.html">R&amp;D</a></li><li><a href="custom-synthesis.html">Custom synthesis</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li>
-      </ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="how-we-work.html">How we work</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div style="grid-column:span 2"><h4>Services</h4><ul class="two-up"><li><a href="services.html">Services overview</a></li><li><a href="washing.html">Washing</a></li><li><a href="sterilizing.html">Sterilizing</a></li><li><a href="mixing.html">Mixing</a></li><li><a href="filling.html">Filling</a></li><li><a href="lyophilization.html">Lyophilization</a></li><li><a href="capping.html">Capping</a></li><li><a href="labeling.html">Labeling</a></li><li><a href="rnd.html">R&amp;D</a></li><li><a href="custom-synthesis.html">Custom Synthesis</a></li></ul></div>
     </div>
-    <div class="foot-legal"><span>© <span data-year>2026</span> Sublyra Sciences</span><span>Privacy · Terms · Accessibility</span></div>
+    <div class="foot-legal"><span>© <span data-year>2026</span> Sublyra Sciences</span><span>Privacy Policy · Cookie Policy · Accessibility</span></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>

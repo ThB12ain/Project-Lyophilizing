@@ -37,11 +37,31 @@
       </svg>
       <span class="brand-name">Sublyra <span>Sciences</span></span>
     </a>
+    <nav class="mainnav" aria-label="Main">
+      <a class="nav-top" href="index.html">Home</a>
+      <div class="dd" data-active="true">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-services">Services<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-services"><a href="services.html">Services overview</a><a href="washing.html" aria-current="page">Washing</a><a href="sterilizing.html">Sterilizing</a><a href="mixing.html">Mixing</a><a href="filling.html">Filling</a><a href="lyophilization.html">Lyophilization</a><a href="capping.html">Capping</a><a href="labeling.html">Labeling</a><a href="rnd.html">R&amp;D</a><a href="custom-synthesis.html">Custom Synthesis</a></div>
+        </div>
+      <div class="dd">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-about">About<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-about"><a href="about.html">About us</a><a href="how-we-work.html">How we work</a><a href="quality.html">Quality</a></div>
+        </div>
+      <div class="dd">
+          <button type="button" class="nav-top" aria-expanded="false" aria-controls="dd-resources">Resources<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <div class="dd-panel" id="dd-resources"><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
     <div class="bar-links">
-      <a class="plain" href="index.html">Overview</a>
-      <a class="plain" href="quality.html">Quality</a>
-      <a class="plain" href="contact.html">Contact</a>
-      <a class="btn btn-primary btn-talk" href="contact.html">Talk to an expert</a>
+      <a class="btn btn-primary btn-talk caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <div><h4>Services</h4><a href="services.html">Services overview</a><a href="washing.html" aria-current="page">Washing</a><a href="sterilizing.html">Sterilizing</a><a href="mixing.html">Mixing</a><a href="filling.html">Filling</a><a href="lyophilization.html">Lyophilization</a><a href="capping.html">Capping</a><a href="labeling.html">Labeling</a><a href="rnd.html">R&amp;D</a><a href="custom-synthesis.html">Custom Synthesis</a></div>
+      <div><h4>About</h4><a href="about.html">About us</a><a href="how-we-work.html">How we work</a><a href="quality.html">Quality</a></div>
+      <div><h4>Resources</h4><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
     </div>
   </div>
   <div class="tabs-scroll">
@@ -62,9 +82,10 @@
   <section class="page-hero on-ink">
     <div class="wrap">
       <div>
-        <p class="crumb"><a href="index.html">Services</a> / Washing</p>
+        <p class="crumb"><a href="index.html">Home</a> » <a href="services.html">Services</a> » Washing</p>
         <h1>Component washing that starts every batch clean.</h1>
         <p class="lede">Glass vials, stoppers and seals are washed with purified water and water for injection on validated cycles, then handed straight to sterilization.</p>
+        <div class="ctas"><a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a></div>
       </div>
       <dl class="keyfacts"><div><dt>Final rinse</dt><dd>WFI, 80 °C</dd></div><div><dt>Particulate spec</dt><dd>USP &lt;788&gt;</dd></div><div><dt>Throughput</dt><dd>up to 24,000 vials/h</dd></div></dl>
     </div>
@@ -84,7 +105,7 @@
   </section>
   <section class="band">
     <div class="wrap two-col">
-      <div><p class="eyebrow">What you get</p><h2>Deliverables</h2></div>
+      <div><p class="eyebrow">Why Sublyra</p><h2>Why choose us for washing</h2><p style="color:var(--muted);margin-top:14px">Every project includes these deliverables.</p></div>
       <ul class="checklist"><li>Washing batch record within your master record</li><li>Rinse water test results</li><li>Component qualification report for new formats</li></ul>
     </div>
   </section>
@@ -99,8 +120,29 @@
   </section>
   <section class="cta-band on-ink">
     <div class="wrap">
-      <div><h2>Let's plan your next batch.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
-      <a class="btn btn-primary" href="contact.html">Talk to an expert</a>
+      <div><p class="eyebrow">Contact</p><h2>Speak with one of our experts.</h2><p>Share your formulation and timeline. We'll map the steps and cost with you.</p></div>
+      <a class="btn btn-primary caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+    </div>
+  </section>
+  <section class="company">
+    <div class="wrap company-grid">
+      <div class="hq">
+        <p class="eyebrow">Find us</p>
+        <h2>Headquartered in Anytown, California</h2>
+        <svg class="dot-map" viewBox="0 0 330 124" role="img" aria-label="Map of the United States with our California site marked">
+          <g class="dots"><circle cx="62" cy="14" r="2.2"/><circle cx="74" cy="14" r="2.2"/><circle cx="86" cy="14" r="2.2"/><circle cx="98" cy="14" r="2.2"/><circle cx="110" cy="14" r="2.2"/><circle cx="122" cy="14" r="2.2"/><circle cx="134" cy="14" r="2.2"/><circle cx="146" cy="14" r="2.2"/><circle cx="158" cy="14" r="2.2"/><circle cx="170" cy="14" r="2.2"/><circle cx="182" cy="14" r="2.2"/><circle cx="194" cy="14" r="2.2"/><circle cx="206" cy="14" r="2.2"/><circle cx="218" cy="14" r="2.2"/><circle cx="230" cy="14" r="2.2"/><circle cx="50" cy="26" r="2.2"/><circle cx="62" cy="26" r="2.2"/><circle cx="74" cy="26" r="2.2"/><circle cx="86" cy="26" r="2.2"/><circle cx="98" cy="26" r="2.2"/><circle cx="110" cy="26" r="2.2"/><circle cx="122" cy="26" r="2.2"/><circle cx="134" cy="26" r="2.2"/><circle cx="146" cy="26" r="2.2"/><circle cx="158" cy="26" r="2.2"/><circle cx="170" cy="26" r="2.2"/><circle cx="182" cy="26" r="2.2"/><circle cx="194" cy="26" r="2.2"/><circle cx="206" cy="26" r="2.2"/><circle cx="218" cy="26" r="2.2"/><circle cx="230" cy="26" r="2.2"/><circle cx="242" cy="26" r="2.2"/><circle cx="254" cy="26" r="2.2"/><circle cx="266" cy="26" r="2.2"/><circle cx="38" cy="38" r="2.2"/><circle cx="50" cy="38" r="2.2"/><circle cx="62" cy="38" r="2.2"/><circle cx="74" cy="38" r="2.2"/><circle cx="86" cy="38" r="2.2"/><circle cx="98" cy="38" r="2.2"/><circle cx="110" cy="38" r="2.2"/><circle cx="122" cy="38" r="2.2"/><circle cx="134" cy="38" r="2.2"/><circle cx="146" cy="38" r="2.2"/><circle cx="158" cy="38" r="2.2"/><circle cx="170" cy="38" r="2.2"/><circle cx="182" cy="38" r="2.2"/><circle cx="194" cy="38" r="2.2"/><circle cx="206" cy="38" r="2.2"/><circle cx="218" cy="38" r="2.2"/><circle cx="230" cy="38" r="2.2"/><circle cx="242" cy="38" r="2.2"/><circle cx="254" cy="38" r="2.2"/><circle cx="266" cy="38" r="2.2"/><circle cx="278" cy="38" r="2.2"/><circle cx="290" cy="38" r="2.2"/><circle cx="302" cy="38" r="2.2"/><circle cx="38" cy="50" r="2.2"/><circle cx="50" cy="50" r="2.2"/><circle cx="62" cy="50" r="2.2"/><circle cx="74" cy="50" r="2.2"/><circle cx="86" cy="50" r="2.2"/><circle cx="98" cy="50" r="2.2"/><circle cx="110" cy="50" r="2.2"/><circle cx="122" cy="50" r="2.2"/><circle cx="134" cy="50" r="2.2"/><circle cx="146" cy="50" r="2.2"/><circle cx="158" cy="50" r="2.2"/><circle cx="170" cy="50" r="2.2"/><circle cx="182" cy="50" r="2.2"/><circle cx="194" cy="50" r="2.2"/><circle cx="206" cy="50" r="2.2"/><circle cx="218" cy="50" r="2.2"/><circle cx="230" cy="50" r="2.2"/><circle cx="242" cy="50" r="2.2"/><circle cx="254" cy="50" r="2.2"/><circle cx="266" cy="50" r="2.2"/><circle cx="278" cy="50" r="2.2"/><circle cx="290" cy="50" r="2.2"/><circle cx="302" cy="50" r="2.2"/><circle cx="314" cy="50" r="2.2"/><circle cx="50" cy="62" r="2.2"/><circle cx="62" cy="62" r="2.2"/><circle cx="74" cy="62" r="2.2"/><circle cx="86" cy="62" r="2.2"/><circle cx="98" cy="62" r="2.2"/><circle cx="110" cy="62" r="2.2"/><circle cx="122" cy="62" r="2.2"/><circle cx="134" cy="62" r="2.2"/><circle cx="146" cy="62" r="2.2"/><circle cx="158" cy="62" r="2.2"/><circle cx="170" cy="62" r="2.2"/><circle cx="182" cy="62" r="2.2"/><circle cx="194" cy="62" r="2.2"/><circle cx="206" cy="62" r="2.2"/><circle cx="218" cy="62" r="2.2"/><circle cx="230" cy="62" r="2.2"/><circle cx="242" cy="62" r="2.2"/><circle cx="254" cy="62" r="2.2"/><circle cx="266" cy="62" r="2.2"/><circle cx="278" cy="62" r="2.2"/><circle cx="290" cy="62" r="2.2"/><circle cx="302" cy="62" r="2.2"/><circle cx="50" cy="74" r="2.2"/><circle cx="62" cy="74" r="2.2"/><circle cx="74" cy="74" r="2.2"/><circle cx="86" cy="74" r="2.2"/><circle cx="98" cy="74" r="2.2"/><circle cx="110" cy="74" r="2.2"/><circle cx="122" cy="74" r="2.2"/><circle cx="134" cy="74" r="2.2"/><circle cx="146" cy="74" r="2.2"/><circle cx="158" cy="74" r="2.2"/><circle cx="170" cy="74" r="2.2"/><circle cx="182" cy="74" r="2.2"/><circle cx="194" cy="74" r="2.2"/><circle cx="206" cy="74" r="2.2"/><circle cx="218" cy="74" r="2.2"/><circle cx="230" cy="74" r="2.2"/><circle cx="242" cy="74" r="2.2"/><circle cx="254" cy="74" r="2.2"/><circle cx="266" cy="74" r="2.2"/><circle cx="278" cy="74" r="2.2"/><circle cx="290" cy="74" r="2.2"/><circle cx="62" cy="86" r="2.2"/><circle cx="74" cy="86" r="2.2"/><circle cx="86" cy="86" r="2.2"/><circle cx="98" cy="86" r="2.2"/><circle cx="110" cy="86" r="2.2"/><circle cx="122" cy="86" r="2.2"/><circle cx="134" cy="86" r="2.2"/><circle cx="146" cy="86" r="2.2"/><circle cx="158" cy="86" r="2.2"/><circle cx="170" cy="86" r="2.2"/><circle cx="182" cy="86" r="2.2"/><circle cx="194" cy="86" r="2.2"/><circle cx="206" cy="86" r="2.2"/><circle cx="218" cy="86" r="2.2"/><circle cx="230" cy="86" r="2.2"/><circle cx="242" cy="86" r="2.2"/><circle cx="254" cy="86" r="2.2"/><circle cx="266" cy="86" r="2.2"/><circle cx="278" cy="86" r="2.2"/><circle cx="74" cy="98" r="2.2"/><circle cx="86" cy="98" r="2.2"/><circle cx="98" cy="98" r="2.2"/><circle cx="110" cy="98" r="2.2"/><circle cx="122" cy="98" r="2.2"/><circle cx="134" cy="98" r="2.2"/><circle cx="146" cy="98" r="2.2"/><circle cx="158" cy="98" r="2.2"/><circle cx="170" cy="98" r="2.2"/><circle cx="182" cy="98" r="2.2"/><circle cx="194" cy="98" r="2.2"/><circle cx="206" cy="98" r="2.2"/><circle cx="218" cy="98" r="2.2"/><circle cx="254" cy="98" r="2.2"/><circle cx="266" cy="98" r="2.2"/><circle cx="278" cy="98" r="2.2"/><circle cx="110" cy="110" r="2.2"/><circle cx="122" cy="110" r="2.2"/><circle cx="134" cy="110" r="2.2"/><circle cx="146" cy="110" r="2.2"/><circle cx="158" cy="110" r="2.2"/><circle cx="266" cy="110" r="2.2"/><circle cx="278" cy="110" r="2.2"/></g>
+          <circle class="pin-ring" cx="50" cy="74" r="9"/><circle class="pin" cx="50" cy="74" r="4.5"/>
+        </svg>
+      </div>
+      <div class="company-copy">
+        <p>Sublyra Sciences works as an extension of your team. We take on the lyophilization and fill-finish steps that are hardest to get right, lower the risk in your program and help you reach the market on time.</p>
+        <a class="btn btn-solid caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
+        <div class="accred">
+          <p class="eyebrow">Accreditations</p>
+          <ul><li>cGMP</li><li>ISO 13485</li><li>FDA registered</li></ul>
+        </div>
+        <div class="address"><p class="eyebrow">Address</p><p>1200 Example Way, Suite 100<br>Anytown, CA 90000</p></div>
+      </div>
     </div>
   </section>
 </main>
@@ -113,20 +155,13 @@
         <path class="cake" d="M20 17.2l5 2.9v5.8l-5 2.9-5-2.9v-5.8z"/>
         <circle class="vapor" cx="25.6" cy="10.4" r="2"/><circle class="vapor" cx="30.6" cy="7.6" r="1.55"/><circle class="vapor" cx="34.6" cy="4.6" r="1.15"/>
       </svg><span class="brand-name">Sublyra <span>Sciences</span></span></a>
-        <p style="margin-top:12px;max-width:28em">Contract lyophilization and fill-finish, from component washing to labeled product.</p>
+        <p style="margin-top:12px;max-width:28em">Lyophilization-led contract manufacturing, from component washing to labeled product.</p>
         <p style="margin-top:12px">1200 Example Way, Anytown, CA 90000</p>
       </div>
-      <div><h4>Process</h4><ul>
-        <li><a href="washing.html">Washing</a></li><li><a href="sterilizing.html">Sterilizing</a></li><li><a href="mixing.html">Mixing</a></li><li><a href="filling.html">Filling</a></li>
-      </ul></div>
-      <div><h4>Finish</h4><ul>
-        <li><a href="lyophilization.html">Lyophilization</a></li><li><a href="capping.html">Capping</a></li><li><a href="labeling.html">Labeling</a></li>
-      </ul></div>
-      <div><h4>Science</h4><ul>
-        <li><a href="rnd.html">R&amp;D</a></li><li><a href="custom-synthesis.html">Custom synthesis</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li>
-      </ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="how-we-work.html">How we work</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div style="grid-column:span 2"><h4>Services</h4><ul class="two-up"><li><a href="services.html">Services overview</a></li><li><a href="washing.html">Washing</a></li><li><a href="sterilizing.html">Sterilizing</a></li><li><a href="mixing.html">Mixing</a></li><li><a href="filling.html">Filling</a></li><li><a href="lyophilization.html">Lyophilization</a></li><li><a href="capping.html">Capping</a></li><li><a href="labeling.html">Labeling</a></li><li><a href="rnd.html">R&amp;D</a></li><li><a href="custom-synthesis.html">Custom Synthesis</a></li></ul></div>
     </div>
-    <div class="foot-legal"><span>© <span data-year>2026</span> Sublyra Sciences</span><span>Privacy · Terms · Accessibility</span></div>
+    <div class="foot-legal"><span>© <span data-year>2026</span> Sublyra Sciences</span><span>Privacy Policy · Cookie Policy · Accessibility</span></div>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
