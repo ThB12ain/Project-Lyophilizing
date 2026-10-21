@@ -281,7 +281,8 @@ def services_overview_rows():
 
 
 def page(active, title, description, body, cta=True):
-    return (head(title, description) + ICONS + header(active)
+    return (head(title, description).replace('<html lang="en">', '<html lang="en" class="theme-v1">')
+            + ICONS + header(active)
             + f'<main id="main">\n  {body}\n  {CTA if cta else ""}\n  {COMPANY}\n</main>\n' + footer())
 
 
@@ -323,7 +324,7 @@ def build():
 
 
 def inline(pages, out):
-    """Self-contained copies for previews: CSS, JS and favicon inlined."""
+    """Self-contained copies for previews: CSS, JS, favicon and image tiles inlined."""
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     css = (ROOT / "assets/css/styles.css").read_text()
@@ -335,6 +336,9 @@ def inline(pages, out):
         t = (text.replace('<link rel="stylesheet" href="assets/css/styles.css">', f"<style>\n{css}</style>")
                  .replace('<script src="assets/js/main.js"></script>', f"<script>\n{js}</script>")
                  .replace('href="assets/img/favicon.svg"', f'href="{fav_uri}"'))
+        for img in (ROOT / "assets/img").glob("tile-*.svg"):
+            t = t.replace(f'src="assets/img/{img.name}"',
+                          f'src="data:image/svg+xml,{urllib.parse.quote(img.read_text())}"')
         (out / name).write_text(t)
 
 

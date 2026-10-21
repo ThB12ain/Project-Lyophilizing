@@ -474,3 +474,38 @@ table.spec.formats-table { min-width: 640px; }
 @media (max-width: 760px) { .mv-grid { grid-template-columns: 1fr; gap: 28px; } }
 .foot-grid ul.two-up { grid-template-columns: 1fr 1fr; column-gap: 24px; }
 @media (max-width: 860px) { .foot-grid > div[style*="span 2"] { grid-column: 1 / -1 !important; } }
+
+/* Version 1 palette: warm sepia-black grounds, sand neutrals, greeny-blue teal.
+   Scoped to html.theme-v1 so Version 2 keeps the original tokens. */
+:root.theme-v1 {
+  --ink: #2b2521; --ink-2: #3a312b; --on-ink: #f4efe8; --on-ink-muted: #c3b8aa;
+  --bg: #faf8f5; --surface: #ffffff; --frost: #f1ece5; --fg: #2b2521; --muted: #6b6159;
+  --line: #e2dad0; --teal: #138a83; --teal-strong: #0e6f69; --ice: #45c4b8; --amber: #a0703f;
+}
+@media (prefers-color-scheme: dark) {
+  :root.theme-v1:not([data-theme="light"]) {
+    --ink: #1c1815; --ink-2: #2a231e; --on-ink: #f4efe8; --on-ink-muted: #b5aa9c;
+    --bg: #1f1b18; --surface: #29231f; --frost: #2f2823; --fg: #f1ebe3; --muted: #b3a89a;
+    --line: #3e352e; --teal: #4fc6ba; --teal-strong: #79d6cc; --ice: #5fd0c4; --amber: #c99561;
+  }
+}
+:root.theme-v1[data-theme="dark"] {
+  --ink: #1c1815; --ink-2: #2a231e; --on-ink: #f4efe8; --on-ink-muted: #b5aa9c;
+  --bg: #1f1b18; --surface: #29231f; --frost: #2f2823; --fg: #f1ebe3; --muted: #b3a89a;
+  --line: #3e352e; --teal: #4fc6ba; --teal-strong: #79d6cc; --ice: #5fd0c4; --amber: #c99561;
+}
+.theme-v1 .btn-primary:hover { background: #7ad8ce; }
+
+/* Stats and image tiles in a checkerboard */
+.stat-mosaic { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.stat-mosaic .stat { border: 0; padding: 22px; margin: 0; background: var(--frost); border-radius: var(--radius); justify-content: flex-end; aspect-ratio: 1; }
+.stat-mosaic .stat + .stat { border: 0; padding-left: 22px; }
+.stat-mosaic .tile { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); }
+@media (max-width: 760px) {
+  .stat-mosaic { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat-mosaic .stat { padding: 16px; }
+  .stat-mosaic .stat + .stat { padding-left: 16px; }
+}
+
+/* Positioning block: illustration on the left on wide screens */
+@media (min-width: 861px) { .positioning .positioning-art { order: -1; } }
