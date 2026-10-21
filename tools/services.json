@@ -1,628 +1,620 @@
 {
- "washing": {
-  "title": "Washing",
-  "icon": "i-wash",
-  "step": 1,
-  "card": "Validated washing of vials, stoppers and components to remove particulates and endotoxin before sterilization.",
-  "headline": "Component washing that starts every batch clean.",
-  "lede": "Glass vials, stoppers and seals are washed with purified water and water for injection on validated cycles, then handed straight to sterilization.",
-  "keyfacts": [
-   [
-    "Final rinse",
-    "WFI, 80 °C"
-   ],
-   [
-    "Particulate spec",
-    "USP <788>"
-   ],
-   [
-    "Throughput",
-    "up to 24,000 vials/h"
-   ]
-  ],
-  "caps": [
-   [
-    "Automated vial washing",
-    "Rotary washers with alternating WFI and compressed-air jets clean the inside and outside of every vial."
-   ],
-   [
-    "Stopper and seal processing",
-    "Rubber closures are washed, siliconized if required, and bagged for steam sterilization."
-   ],
-   [
-    "Endotoxin control",
-    "Wash cycles are qualified to remove endotoxin and particulates, with rinse water sampled each run."
-   ]
-  ],
-  "specTitle": "Washing at a glance",
-  "specBody": [
-   "Washing runs in-line with depyrogenation, so clean vials never wait in open air.",
-   "We qualify each new component format with spiked particulate and endotoxin challenge studies."
-  ],
-  "spec": [
-   [
-    "Vial formats",
-    "2R to 50R, ISO 8362"
-   ],
-   [
-    "Wash media",
-    "Purified water, WFI"
-   ],
-   [
-    "Final rinse temperature",
-    "80 °C"
-   ],
-   [
-    "Component types",
-    "Vials, stoppers, seals, ampoules"
-   ],
-   [
-    "Monitoring",
-    "Conductivity, TOC, endotoxin"
-   ]
-  ],
-  "deliverables": [
-   "Washing batch record within your master record",
-   "Rinse water test results",
-   "Component qualification report for new formats"
-  ]
- },
- "sterilizing": {
-  "title": "Sterilizing",
-  "icon": "i-steril",
-  "step": 2,
-  "card": "Dry-heat depyrogenation, steam sterilization and VHP decontamination for components and equipment.",
-  "headline": "Sterilization and depyrogenation you can audit.",
-  "lede": "Washed vials pass through a dry-heat tunnel into the Grade A filling zone. Stoppers, tools and change parts are steam sterilized on validated loads.",
-  "keyfacts": [
-   [
-    "Depyrogenation",
-    "≥ 3-log endotoxin reduction"
-   ],
-   [
-    "Tunnel",
-    "300 °C+ dry heat"
-   ],
-   [
-    "Steam",
-    "121 °C validated loads"
-   ]
-  ],
-  "caps": [
-   [
-    "Dry-heat depyrogenation",
-    "A continuous tunnel delivers sterile, endotoxin-free vials directly into the isolator."
-   ],
-   [
-    "Steam sterilization",
-    "Autoclave cycles for stoppers, filling parts and garments, each with load maps and biological indicators."
-   ],
-   [
-    "VHP decontamination",
-    "Vaporized hydrogen peroxide cycles decontaminate isolators and material transfers."
-   ]
-  ],
-  "specTitle": "Sterilization at a glance",
-  "specBody": [
-   "Every load runs on a validated cycle with recorded temperature, pressure and time.",
-   "We run endotoxin challenge vials and biological indicators to confirm each cycle meets its target."
-  ],
-  "spec": [
-   [
-    "Depyrogenation tunnel",
-    "Dry heat, ≥ 300 °C"
-   ],
-   [
-    "Autoclave",
-    "Saturated steam, 121–134 °C"
-   ],
-   [
-    "Isolator decon",
-    "VHP, 6-log reduction"
-   ],
-   [
-    "Indicators",
-    "Biological and chemical"
-   ],
-   [
-    "Records",
-    "21 CFR Part 11 electronic"
-   ]
-  ],
-  "deliverables": [
-   "Cycle printouts in your batch record",
-   "Biological indicator results",
-   "Sterilization validation summary on request"
-  ]
- },
- "mixing": {
-  "title": "Mixing",
-  "icon": "i-mix",
-  "step": 3,
-  "card": "GMP compounding and sterile filtration of solutions and suspensions from bench scale to production tanks.",
-  "headline": "Compounding that keeps your formulation consistent.",
-  "lede": "We weigh, dissolve and blend your formulation in jacketed single-use or stainless vessels, then sterile-filter it into the filling suite.",
-  "keyfacts": [
-   [
-    "Batch size",
-    "1 L to 500 L"
-   ],
-   [
-    "Filtration",
-    "0.2 µm, integrity tested"
-   ],
-   [
-    "Vessels",
-    "Single-use or stainless"
-   ]
-  ],
-  "caps": [
-   [
-    "Solution and suspension prep",
-    "Controlled-temperature mixing with in-process checks for pH, osmolality and concentration."
-   ],
-   [
-    "Sterile filtration",
-    "Redundant 0.2 µm filtration with pre- and post-use integrity testing."
-   ],
-   [
-    "Low-shear handling",
-    "Mixing profiles suited to proteins and other shear-sensitive actives."
-   ]
-  ],
-  "specTitle": "Mixing at a glance",
-  "specBody": [
-   "Raw materials are released by our QC lab before dispensing.",
-   "Hold-time studies define how long the bulk can wait before filling."
-  ],
-  "spec": [
-   [
-    "Vessel range",
-    "1 L to 500 L"
-   ],
-   [
-    "Temperature control",
-    "2 °C to 40 °C jacketed"
-   ],
-   [
-    "Filtration",
-    "0.2 µm, redundant"
-   ],
-   [
-    "In-process tests",
-    "pH, osmolality, bioburden"
-   ],
-   [
-    "Atmosphere",
-    "Nitrogen overlay available"
-   ]
-  ],
-  "deliverables": [
-   "Compounding batch record",
-   "Filter integrity results",
-   "In-process test data and hold-time support"
-  ]
- },
- "filling": {
-  "title": "Filling",
-  "icon": "i-fill",
-  "step": 4,
-  "card": "Isolator-based aseptic filling of vials with partial stoppering for lyophilization.",
-  "headline": "Aseptic filling, ready for the lyophilizer.",
-  "lede": "Our isolator line fills, weighs and partially stoppers vials in Grade A air, then loads them into the lyophilizer without opening the barrier.",
-  "keyfacts": [
-   [
-    "Fill range",
-    "0.2 mL to 50 mL"
-   ],
-   [
-    "Accuracy",
-    "± 1% by checkweight"
-   ],
-   [
-    "Barrier",
-    "Closed isolator, Grade A"
-   ]
-  ],
-  "caps": [
-   [
-    "Isolator filling",
-    "A closed barrier separates operators from open product throughout filling."
-   ],
-   [
-    "100% checkweighing",
-    "In-line weighing adjusts fill pumps in real time to hold your target volume."
-   ],
-   [
-    "Automatic lyophilizer loading",
-    "Partially stoppered vials move by conveyor directly onto the lyophilizer shelves."
-   ]
-  ],
-  "specTitle": "Filling at a glance",
-  "specBody": [
-   "Peristaltic and rotary piston pumps cover viscous, sensitive and low-volume products.",
-   "Media fills qualify the line twice a year."
-  ],
-  "spec": [
-   [
-    "Containers",
-    "Vials 2R to 50R"
-   ],
-   [
-    "Fill volume",
-    "0.2 mL to 50 mL"
-   ],
-   [
-    "Speed",
-    "up to 6,000 units/h"
-   ],
-   [
-    "Pump types",
-    "Peristaltic, rotary piston"
-   ],
-   [
-    "Closures",
-    "13 mm and 20 mm lyo stoppers"
-   ]
-  ],
-  "deliverables": [
-   "Filling batch record with checkweight data",
-   "Environmental monitoring summary",
-   "Media fill status for the line"
-  ]
- },
- "lyophilization": {
-  "title": "Lyophilization",
-  "icon": "i-lyo",
-  "step": 5,
-  "featured": true,
-  "card": "Cycle development, optimization and GMP lyophilization from pilot lots to commercial batches.",
-  "headline": "Lyophilization is what we do best.",
-  "lede": "We design cycles from your formulation's thermal data, scale them from pilot to production dryers, and run them under GMP with full process monitoring.",
-  "keyfacts": [
-   [
-    "Shelf range",
-    "−70 °C to +60 °C"
-   ],
-   [
-    "Shelf area",
-    "0.5 m² to 32 m²"
-   ],
-   [
-    "Condenser",
-    "−85 °C"
-   ],
-   [
-    "Residual moisture",
-    "< 1% typical"
-   ]
-  ],
-  "caps": [
-   [
-    "Thermal characterization",
-    "Lyomicroscopy and DSC find your collapse and glass transition temperatures before any cycle is written."
-   ],
-   [
-    "Cycle development and optimization",
-    "We build a recipe that keeps product temperature below collapse, then shorten primary drying without risking the cake."
-   ],
-   [
-    "Scale-up and GMP manufacturing",
-    "Pilot and production dryers share controls and sensors, so a cycle transfers with predictable results."
-   ]
-  ],
-  "specTitle": "Lyophilization at a glance",
-  "specBody": [
-   "Every dryer carries wireless product probes, capacitance and Pirani gauges, and pressure-rise testing to confirm the end of primary drying.",
-   "Controlled ice nucleation is available to make freezing uniform from vial to vial."
-  ],
-  "spec": [
-   [
-    "Dryers",
-    "Pilot 0.5 m², production 10 m² and 32 m²"
-   ],
-   [
-    "Shelf temperature",
-    "−70 °C to +60 °C"
-   ],
-   [
-    "Condenser",
-    "−85 °C, 50 kg ice capacity"
-   ],
-   [
-    "Chamber pressure",
-    "20 to 1,000 mTorr"
-   ],
-   [
-    "Process analytics",
-    "Product probes, Pirani vs. CM, pressure rise"
-   ],
-   [
-    "Nucleation",
-    "Controlled ice nucleation option"
-   ],
-   [
-    "Release tests",
-    "KF moisture, reconstitution, cake appearance"
-   ]
-  ],
-  "deliverables": [
-   "Thermal characterization report (Tc, Tg′)",
-   "Cycle development and optimization report",
-   "Engineering and GMP batch records with full cycle data",
-   "Residual moisture and reconstitution results"
-  ]
- },
- "capping": {
-  "title": "Capping",
-  "icon": "i-cap",
-  "step": 6,
-  "card": "Full stoppering inside the dryer, then aluminum crimp sealing with 100% container closure inspection.",
-  "headline": "Sealing that protects the cake you just dried.",
-  "lede": "Vials are fully stoppered inside the lyophilizer under controlled atmosphere, then crimp sealed and inspected before they leave the clean zone.",
-  "keyfacts": [
-   [
-    "Stoppering",
-    "In-chamber, under N₂"
-   ],
-   [
-    "Seals",
-    "13 mm and 20 mm flip-off"
-   ],
-   [
-    "Inspection",
-    "100% visual"
-   ]
-  ],
-  "caps": [
-   [
-    "In-chamber stoppering",
-    "Shelves press stoppers home at the end of the cycle, under nitrogen or partial vacuum."
-   ],
-   [
-    "Crimp sealing",
-    "Aluminum and flip-off seals applied with residual seal force monitoring."
-   ],
-   [
-    "Container closure integrity",
-    "Headspace and leak testing confirm each seal keeps moisture and oxygen out."
-   ]
-  ],
-  "specTitle": "Capping at a glance",
-  "specBody": [
-   "Capping runs in a Grade A air supply to keep sealed vials clean.",
-   "Rejected vials are segregated and reconciled against the batch count."
-  ],
-  "spec": [
-   [
-    "Seal sizes",
-    "13 mm, 20 mm"
-   ],
-   [
-    "Seal types",
-    "Aluminum, flip-off, tear-off"
-   ],
-   [
-    "Speed",
-    "up to 6,000 units/h"
-   ],
-   [
-    "Integrity tests",
-    "Headspace O₂ and moisture, vacuum decay"
-   ],
-   [
-    "Inspection",
-    "100% visual, AQL sampling"
-   ]
-  ],
-  "deliverables": [
-   "Capping and inspection batch records",
-   "Container closure integrity data",
-   "Reject reconciliation"
-  ]
- },
- "labeling": {
-  "title": "Labeling",
-  "icon": "i-label",
-  "step": 7,
-  "card": "Vial labeling, serialization, cartoning and kit assembly, ready for clinical or commercial distribution.",
-  "headline": "Labeled, serialized and ready to ship.",
-  "lede": "We apply printed or variable-data labels, serialize to your market's rules, and pack units into cartons or kits for distribution.",
-  "keyfacts": [
-   [
-    "Labeling",
-    "Wrap-around, pressure-sensitive"
-   ],
-   [
-    "Print",
-    "Lot, expiry, 2D codes"
-   ],
-   [
-    "Packaging",
-    "Cartons, kits, trays"
-   ]
-  ],
-  "caps": [
-   [
-    "Vial labeling",
-    "Pressure-sensitive wrap labels with print-and-verify for lot and expiry data."
-   ],
-   [
-    "Serialization",
-    "2D DataMatrix codes and aggregation to meet DSCSA and EU FMD requirements."
-   ],
-   [
-    "Cartoning and kitting",
-    "Unit cartons, multi-component kits and clinical blinding where needed."
-   ]
-  ],
-  "specTitle": "Labeling at a glance",
-  "specBody": [
-   "Vision systems check every label for presence, position and print quality.",
-   "Label stock is controlled and reconciled against each batch."
-  ],
-  "spec": [
-   [
-    "Label types",
-    "Wrap-around, booklet, cold-chain"
-   ],
-   [
-    "Variable print",
-    "Lot, expiry, serial, 2D code"
-   ],
-   [
-    "Serialization",
-    "DSCSA, EU FMD"
-   ],
-   [
-    "Packaging",
-    "Cartons, kits, shippers"
-   ],
-   [
-    "Verification",
-    "100% camera inspection"
-   ]
-  ],
-  "deliverables": [
-   "Labeling and packaging batch records",
-   "Label reconciliation",
-   "Serialization data files"
-  ]
- },
- "rnd": {
-  "title": "R&D",
-  "icon": "i-rnd",
-  "support": true,
-  "card": "Formulation development, feasibility studies and stability programs that get your product ready to lyophilize.",
-  "headline": "Formulation science before the first cycle.",
-  "lede": "Our scientists screen excipients, build stable formulations and run the studies that tell you whether, and how, your product should be lyophilized.",
-  "keyfacts": [
-   [
-    "Feasibility",
-    "Small-scale lyo screens"
-   ],
-   [
-    "Analytics",
-    "DSC, FDM, KF, HPLC"
-   ],
-   [
-    "Stability",
-    "ICH conditions"
-   ]
-  ],
-  "caps": [
-   [
-    "Formulation development",
-    "Excipient screening for bulking agents, cryoprotectants and buffers matched to your active."
-   ],
-   [
-    "Lyophilization feasibility",
-    "Small-scale lyophilization runs show cake quality and stability before you commit to scale."
-   ],
-   [
-    "Stability and analytics",
-    "ICH stability storage with in-house methods for potency, moisture and degradation."
-   ]
-  ],
-  "specTitle": "R&D at a glance",
-  "specBody": [
-   "Development data feeds straight into our manufacturing team, so nothing is lost in transfer.",
-   "We can also support tech transfer of methods you already have."
-  ],
-  "spec": [
-   [
-    "Thermal analysis",
-    "DSC, lyomicroscopy"
-   ],
-   [
-    "Moisture",
-    "Karl Fischer, NIR"
-   ],
-   [
-    "Chromatography",
-    "HPLC, UPLC, SEC"
-   ],
-   [
-    "Stability chambers",
-    "ICH long-term and accelerated"
-   ],
-   [
-    "Reports",
-    "Development reports for regulatory filings"
-   ]
-  ],
-  "deliverables": [
-   "Formulation development report",
-   "Feasibility cycle data and cake images",
-   "Stability protocols and results"
-  ]
- },
- "synthesis": {
-  "title": "Custom Synthesis",
-  "icon": "i-synth",
-  "support": true,
-  "card": "Synthesis of small molecules, peptides, conjugates and reagents to your specification, from milligrams to kilograms.",
-  "headline": "Custom synthesis for the active you need.",
-  "lede": "When your active ingredient or reagent isn't available off the shelf, our chemists make it to your specification and hand it directly to our formulation team.",
-  "keyfacts": [
-   [
-    "Scale",
-    "mg to multi-kg"
-   ],
-   [
-    "Chemistries",
-    "Small molecules, peptides"
-   ],
-   [
-    "Purity",
-    "to your spec"
-   ]
-  ],
-  "caps": [
-   [
-    "Route design and scale-up",
-    "Synthetic routes chosen for yield, purity and a path to larger scale."
-   ],
-   [
-    "Peptides and conjugates",
-    "Solid-phase peptide synthesis, labeling and conjugation for diagnostics and therapeutics."
-   ],
-   [
-    "Reagents and standards",
-    "Reference standards, substrates and specialty reagents with full characterization."
-   ]
-  ],
-  "specTitle": "Custom synthesis at a glance",
-  "specBody": [
-   "Every lot ships with a certificate of analysis and supporting spectra.",
-   "Material made here can move straight into formulation and lyophilization without a third-party transfer."
-  ],
-  "spec": [
-   [
-    "Scale",
-    "Milligram to multi-kilogram"
-   ],
-   [
-    "Chemistries",
-    "Small molecule, peptide, conjugate"
-   ],
-   [
-    "Characterization",
-    "NMR, LC-MS, HPLC purity"
-   ],
-   [
-    "Documentation",
-    "CoA, spectra, batch records"
-   ],
-   [
-    "Quality level",
-    "Research grade to GMP"
-   ]
-  ],
-  "deliverables": [
-   "Synthesized material with certificate of analysis",
-   "Analytical characterization package",
-   "Route and process summary"
-  ]
- }
+  "formulation": {
+    "title": "Formulation",
+    "icon": "i-mix",
+    "step": 1,
+    "card": "Buffer screening, excipient selection and compounding that make a product stable before it ever reaches a vial.",
+    "headline": "A stable product starts with the right formulation.",
+    "lede": "Our scientists screen buffers, stabilizers and bulking agents against your stability targets, then scale the recipe into GMP compounding with the same team.",
+    "keyfacts": [
+      [
+        "Scale",
+        "Bench to 500 L"
+      ],
+      [
+        "Studies",
+        "Excipient and pH screening"
+      ],
+      [
+        "Output",
+        "Tech-transfer-ready recipe"
+      ]
+    ],
+    "caps": [
+      [
+        "Pre-formulation screening",
+        "pH, ionic strength and excipient panels show what keeps your active stable and what harms it."
+      ],
+      [
+        "Lyophilization-ready design",
+        "We pick bulking agents and lyoprotectants that give a high collapse temperature and an elegant cake."
+      ],
+      [
+        "GMP compounding",
+        "Validated mixing vessels and sterile filtration take the final recipe from bench to batch size."
+      ]
+    ],
+    "specTitle": "Formulation at a glance",
+    "specBody": [
+      "Every study is designed around the release and stability specs you will file.",
+      "Compounding records carry straight into the fill and lyophilization batch record."
+    ],
+    "spec": [
+      [
+        "Vessel range",
+        "1 L to 500 L"
+      ],
+      [
+        "Filtration",
+        "0.2 µm sterilizing grade, integrity tested"
+      ],
+      [
+        "Mixing",
+        "Magnetic and overhead, single-use options"
+      ],
+      [
+        "Environment",
+        "ISO 7 compounding suite"
+      ],
+      [
+        "Stability",
+        "Accelerated and real-time studies"
+      ]
+    ],
+    "deliverables": [
+      "Formulation development report",
+      "Excipient and buffer screening data",
+      "GMP compounding batch record"
+    ]
+  },
+  "reagent-manufacturing": {
+    "title": "Reagent Manufacturing",
+    "icon": "i-synth",
+    "step": 2,
+    "card": "Diagnostic and research reagents made to your specification, from enzyme mixes to custom buffers and controls.",
+    "headline": "Reagents made to your specification, batch after batch.",
+    "lede": "We manufacture enzyme mixes, master mixes, buffers, calibrators and controls under a documented quality system, with tight lot-to-lot consistency.",
+    "keyfacts": [
+      [
+        "Formats",
+        "Liquid and lyophilized"
+      ],
+      [
+        "Lot size",
+        "Milliliters to hundreds of liters"
+      ],
+      [
+        "Quality",
+        "ISO 13485 aligned"
+      ]
+    ],
+    "caps": [
+      [
+        "Custom reagent production",
+        "Enzyme blends, PCR and isothermal master mixes, buffers and diluents made to your recipe."
+      ],
+      [
+        "Calibrators and controls",
+        "Matrix-matched materials with assigned values and stability data."
+      ],
+      [
+        "Raw material control",
+        "Qualified suppliers, incoming testing and full traceability for every component."
+      ]
+    ],
+    "specTitle": "Reagent manufacturing at a glance",
+    "specBody": [
+      "Reagents can ship as bulk liquid, filled vials or lyophilized beads and cakes.",
+      "Each lot is released against your functional and analytical specifications."
+    ],
+    "spec": [
+      [
+        "Batch size",
+        "50 mL to 300 L"
+      ],
+      [
+        "Product types",
+        "Enzyme mixes, buffers, controls, calibrators"
+      ],
+      [
+        "Formats",
+        "Bulk, vials, plates, lyophilized"
+      ],
+      [
+        "Environment",
+        "Controlled, nuclease-free areas"
+      ],
+      [
+        "Release",
+        "Functional and analytical testing"
+      ]
+    ],
+    "deliverables": [
+      "Batch record and certificate of analysis",
+      "Lot-to-lot consistency data",
+      "Raw material traceability"
+    ]
+  },
+  "fill-finish": {
+    "title": "Fill and Finish",
+    "icon": "i-fill",
+    "step": 3,
+    "card": "Aseptic filling of vials and containers, stoppering, capping and 100% inspection under Grade A conditions.",
+    "headline": "Accurate fills in a protected aseptic environment.",
+    "lede": "Isolator-based lines fill vials and containers, partially stopper them for lyophilization or fully seal liquid products, and inspect every unit.",
+    "keyfacts": [
+      [
+        "Fill range",
+        "0.1 mL to 50 mL"
+      ],
+      [
+        "Line",
+        "Isolator, Grade A"
+      ],
+      [
+        "Inspection",
+        "100% visual"
+      ]
+    ],
+    "caps": [
+      [
+        "Aseptic filling",
+        "Peristaltic and piston pumps with in-process weight checks for precise doses."
+      ],
+      [
+        "Stoppering and capping",
+        "Partial stoppering for the lyophilizer, or full stoppering and crimp sealing for liquids."
+      ],
+      [
+        "Inspection",
+        "Every unit is inspected for particles, fill level and closure defects before release."
+      ]
+    ],
+    "specTitle": "Fill and finish at a glance",
+    "specBody": [
+      "Media fills qualify every line configuration before your product runs on it.",
+      "Filled vials move directly from the isolator into the lyophilizer, with no transport between sites."
+    ],
+    "spec": [
+      [
+        "Containers",
+        "2R to 50R vials, bottles, cartridges"
+      ],
+      [
+        "Fill volume",
+        "0.1 mL to 50 mL"
+      ],
+      [
+        "Speed",
+        "up to 6,000 units/h"
+      ],
+      [
+        "Environment",
+        "Grade A isolator in Grade C background"
+      ],
+      [
+        "Closure",
+        "13 mm and 20 mm stoppers and seals"
+      ]
+    ],
+    "deliverables": [
+      "Fill and finish batch record",
+      "In-process fill weight data",
+      "Inspection and reject reconciliation"
+    ]
+  },
+  "lyophilization": {
+    "title": "Lyophilization",
+    "icon": "i-lyo",
+    "step": 4,
+    "featured": true,
+    "card": "Cycle development, optimization and GMP lyophilization from pilot lots to commercial batches.",
+    "headline": "Lyophilization is what we do best.",
+    "lede": "We design cycles from your formulation's thermal data, scale them from pilot to production dryers, and run them under GMP with full process monitoring.",
+    "keyfacts": [
+      [
+        "Shelf range",
+        "−70 °C to +60 °C"
+      ],
+      [
+        "Shelf area",
+        "0.5 m² to 32 m²"
+      ],
+      [
+        "Condenser",
+        "−85 °C"
+      ],
+      [
+        "Residual moisture",
+        "< 1% typical"
+      ]
+    ],
+    "caps": [
+      [
+        "Thermal characterization",
+        "Lyomicroscopy and DSC find your collapse and glass transition temperatures before any cycle is written."
+      ],
+      [
+        "Cycle development and optimization",
+        "We build a recipe that keeps product temperature below collapse, then shorten primary drying without risking the cake."
+      ],
+      [
+        "Scale-up and GMP manufacturing",
+        "Pilot and production dryers share controls and sensors, so a cycle transfers with predictable results."
+      ]
+    ],
+    "specTitle": "Lyophilization at a glance",
+    "specBody": [
+      "Every dryer carries wireless product probes, capacitance and Pirani gauges, and pressure-rise testing to confirm the end of primary drying.",
+      "Controlled ice nucleation is available to make freezing uniform from vial to vial."
+    ],
+    "spec": [
+      [
+        "Dryers",
+        "Pilot 0.5 m², production 10 m² and 32 m²"
+      ],
+      [
+        "Shelf temperature",
+        "−70 °C to +60 °C"
+      ],
+      [
+        "Condenser",
+        "−85 °C, 50 kg ice capacity"
+      ],
+      [
+        "Chamber pressure",
+        "20 to 1,000 mTorr"
+      ],
+      [
+        "Formats",
+        "Vials, beads, bulk trays, plates"
+      ]
+    ],
+    "deliverables": [
+      "Thermal characterization report",
+      "Cycle development report and recipe",
+      "GMP batch record with full cycle data",
+      "Residual moisture and cake appearance results"
+    ]
+  },
+  "kitting-packaging": {
+    "title": "Kitting and Packaging",
+    "icon": "i-label",
+    "step": 5,
+    "card": "Labeling, serialization, kit assembly and cartoning so finished product leaves ready for clinical or commercial use.",
+    "headline": "Finished, labeled kits ready to ship.",
+    "lede": "We label, serialize and assemble components into complete kits, with every label and insert checked against the approved artwork.",
+    "keyfacts": [
+      [
+        "Labeling",
+        "Vials, bottles, pouches"
+      ],
+      [
+        "Kits",
+        "Multi-component assembly"
+      ],
+      [
+        "Checks",
+        "Barcode and print verification"
+      ]
+    ],
+    "caps": [
+      [
+        "Labeling and serialization",
+        "Printed and verified labels with lot, expiry and unique identifiers."
+      ],
+      [
+        "Kit assembly",
+        "Reagents, vials, devices and inserts packed into finished kits to your bill of materials."
+      ],
+      [
+        "Cartoning and shipping cases",
+        "Secondary packaging, inserts and case labels ready for distribution."
+      ]
+    ],
+    "specTitle": "Kitting and packaging at a glance",
+    "specBody": [
+      "Line clearance and label reconciliation run on every packaging batch.",
+      "Cold-chain kits are assembled in temperature-controlled rooms."
+    ],
+    "spec": [
+      [
+        "Label formats",
+        "Wraparound, booklet, cold-stable"
+      ],
+      [
+        "Verification",
+        "Vision and barcode checks"
+      ],
+      [
+        "Kit types",
+        "Diagnostic, clinical, research"
+      ],
+      [
+        "Environment",
+        "Controlled ambient and 2 to 8 °C"
+      ],
+      [
+        "Serialization",
+        "Lot, expiry and unique IDs"
+      ]
+    ],
+    "deliverables": [
+      "Packaging batch record",
+      "Label reconciliation report",
+      "Finished kit release documentation"
+    ]
+  },
+  "storage-logistics": {
+    "title": "Storage and Logistics",
+    "icon": "i-store",
+    "step": 6,
+    "card": "cGMP storage from −80 °C to room temperature, with monitored inventory and qualified shipping.",
+    "headline": "Storage and shipping that protect your product to the last mile.",
+    "lede": "Finished product, intermediates and retained samples are stored under monitored conditions and shipped in qualified packaging when you need them.",
+    "keyfacts": [
+      [
+        "Temperatures",
+        "−80 °C to 25 °C"
+      ],
+      [
+        "Monitoring",
+        "24/7 with alarms"
+      ],
+      [
+        "Shipping",
+        "Qualified cold chain"
+      ]
+    ],
+    "caps": [
+      [
+        "cGMP storage",
+        "Freezers, cold rooms and controlled ambient space, all mapped and continuously monitored."
+      ],
+      [
+        "Inventory management",
+        "Every lot is tracked from receipt to release and shipment."
+      ],
+      [
+        "Distribution",
+        "Qualified shippers and couriers move product frozen, chilled or at room temperature."
+      ]
+    ],
+    "specTitle": "Storage and logistics at a glance",
+    "specBody": [
+      "Backup power and redundant units protect stored product during an outage.",
+      "Retained samples and stability pulls are managed under the same system."
+    ],
+    "spec": [
+      [
+        "Conditions",
+        "−80 °C, −20 °C, 2 to 8 °C, 15 to 25 °C"
+      ],
+      [
+        "Monitoring",
+        "Continuous, with alarm escalation"
+      ],
+      [
+        "Mapping",
+        "Annual temperature mapping"
+      ],
+      [
+        "Shipping",
+        "Dry ice, gel pack, ambient"
+      ],
+      [
+        "Records",
+        "Chain of custody for every shipment"
+      ]
+    ],
+    "deliverables": [
+      "Storage condition records",
+      "Inventory and chain-of-custody reports",
+      "Shipping documentation"
+    ]
+  },
+  "quality-control": {
+    "title": "Quality Control",
+    "icon": "i-rnd",
+    "support": true,
+    "card": "Analytical testing, release and stability programs that support every batch we make.",
+    "headline": "Testing that stands behind every batch.",
+    "lede": "Our quality control lab tests raw materials, in-process samples and finished product, and runs stability programs to support your shelf-life claims.",
+    "keyfacts": [
+      [
+        "Release",
+        "Every batch"
+      ],
+      [
+        "Methods",
+        "Developed, transferred or compendial"
+      ],
+      [
+        "Stability",
+        "ICH conditions"
+      ]
+    ],
+    "caps": [
+      [
+        "Release testing",
+        "Identity, potency, purity, residual moisture and appearance against your specifications."
+      ],
+      [
+        "Method development and transfer",
+        "We build new methods or transfer and qualify yours."
+      ],
+      [
+        "Stability programs",
+        "Real-time and accelerated storage with scheduled pulls and trend reports."
+      ]
+    ],
+    "specTitle": "Quality control at a glance",
+    "specBody": [
+      "Out-of-specification results are investigated under documented procedures and shared with you.",
+      "Data are recorded in validated systems that keep a full audit trail."
+    ],
+    "spec": [
+      [
+        "Assays",
+        "HPLC, UV-Vis, qPCR, ELISA, enzyme activity"
+      ],
+      [
+        "Physical tests",
+        "Karl Fischer, osmolality, pH, visual"
+      ],
+      [
+        "Microbiology",
+        "Bioburden, endotoxin, sterility"
+      ],
+      [
+        "Stability",
+        "ICH long-term and accelerated"
+      ],
+      [
+        "Data",
+        "Validated systems with audit trail"
+      ]
+    ],
+    "deliverables": [
+      "Certificates of analysis",
+      "Method qualification reports",
+      "Stability reports and trend data"
+    ]
+  },
+  "combination-products": {
+    "title": "Combination Product Manufacturing",
+    "icon": "i-combo",
+    "support": true,
+    "card": "Manufacturing for products that pair a drug or biologic with a device, under one quality system.",
+    "headline": "Drug and device, built together.",
+    "lede": "We manufacture and assemble products that combine a drug or biologic with a delivery device, applying both drug and device quality requirements.",
+    "keyfacts": [
+      [
+        "Scope",
+        "Drug or biologic with device"
+      ],
+      [
+        "Quality",
+        "cGMP and design controls"
+      ],
+      [
+        "Assembly",
+        "Clean, controlled areas"
+      ]
+    ],
+    "caps": [
+      [
+        "Integrated manufacturing",
+        "Formulation, filling and device assembly planned as one process."
+      ],
+      [
+        "Device assembly",
+        "Prefilled components, cartridges and kits assembled in controlled areas."
+      ],
+      [
+        "Dual compliance",
+        "Records meet both drug cGMP and device design-control expectations."
+      ]
+    ],
+    "specTitle": "Combination products at a glance",
+    "specBody": [
+      "Risk management follows the product from design transfer through commercial supply.",
+      "Functional testing confirms the device delivers the dose it should."
+    ],
+    "spec": [
+      [
+        "Product types",
+        "Prefilled devices, drug-device kits"
+      ],
+      [
+        "Standards",
+        "21 CFR Part 4, ISO 13485"
+      ],
+      [
+        "Testing",
+        "Functional and dose delivery"
+      ],
+      [
+        "Environment",
+        "ISO 7 and ISO 8 assembly"
+      ],
+      [
+        "Records",
+        "Device history and batch records"
+      ]
+    ],
+    "deliverables": [
+      "Combined batch and device history record",
+      "Functional test data",
+      "Risk management file inputs"
+    ]
+  },
+  "tech-transfer": {
+    "title": "Technical Transfer",
+    "icon": "i-transfer",
+    "support": true,
+    "card": "Structured transfer of your process and methods into our facility, with gap analysis and engineering runs.",
+    "headline": "Move your process once, and move it right.",
+    "lede": "We take over processes from your lab or another manufacturer with a documented plan, gap analysis and engineering runs before any GMP batch.",
+    "keyfacts": [
+      [
+        "Plan",
+        "Documented transfer protocol"
+      ],
+      [
+        "Runs",
+        "Engineering then GMP"
+      ],
+      [
+        "Team",
+        "One project manager"
+      ]
+    ],
+    "caps": [
+      [
+        "Gap analysis",
+        "We compare your process, equipment and methods with ours and resolve the differences up front."
+      ],
+      [
+        "Engineering runs",
+        "Trial batches confirm the process performs on our equipment before GMP manufacturing."
+      ],
+      [
+        "Method transfer",
+        "Analytical methods are transferred and qualified alongside the process."
+      ]
+    ],
+    "specTitle": "Technical transfer at a glance",
+    "specBody": [
+      "A single project manager keeps the plan, risks and timeline visible to both teams.",
+      "Transfer reports document every change so regulators can follow the process history."
+    ],
+    "spec": [
+      [
+        "Inputs",
+        "Batch records, specifications, methods"
+      ],
+      [
+        "Outputs",
+        "Transfer report, master batch record"
+      ],
+      [
+        "Runs",
+        "Engineering and confirmation batches"
+      ],
+      [
+        "Analytics",
+        "Method transfer and qualification"
+      ],
+      [
+        "Governance",
+        "Joint steering meetings"
+      ]
+    ],
+    "deliverables": [
+      "Transfer plan and gap analysis",
+      "Engineering run reports",
+      "Master batch record"
+    ]
+  }
 }
