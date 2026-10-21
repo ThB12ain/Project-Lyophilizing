@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a culture dish and pipette tip">
+  <rect width="400" height="400" fill="#1a9e96"/>
+  <circle cx="190" cy="220" r="128" fill="#7fd6cc" opacity=".35"/>
+  <circle cx="190" cy="220" r="112" fill="#e8f6f3" stroke="#ffffff" stroke-width="6"/>
+  <g fill="#1a9e96" opacity=".75"><circle cx="150" cy="190" r="16"/><circle cx="214" cy="172" r="10"/><circle cx="232" cy="246" r="20"/><circle cx="168" cy="262" r="12"/><circle cx="198" cy="214" r="7"/><circle cx="252" cy="198" r="6"/></g>
+  <g fill="#a0703f" opacity=".8"><circle cx="124" cy="234" r="6"/><circle cx="214" cy="286" r="5"/><circle cx="262" cy="270" r="4"/></g>
+  <path d="M312 40l26 26-92 92-10 4 4-10z" fill="#2b2521"/>
+  <path d="M236 152l-14 20 20-14z" fill="#efe7db"/>
+</svg>
