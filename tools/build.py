@@ -324,7 +324,7 @@ def build():
 
 
 def inline(pages, out):
-    """Self-contained copies for previews: CSS, JS, favicon and image tiles inlined."""
+    """Self-contained copies for previews: CSS, JS and favicon inlined."""
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     css = (ROOT / "assets/css/styles.css").read_text()
@@ -336,9 +336,6 @@ def inline(pages, out):
         t = (text.replace('<link rel="stylesheet" href="assets/css/styles.css">', f"<style>\n{css}</style>")
                  .replace('<script src="assets/js/main.js"></script>', f"<script>\n{js}</script>")
                  .replace('href="assets/img/favicon.svg"', f'href="{fav_uri}"'))
-        for img in (ROOT / "assets/img").glob("tile-*.svg"):
-            t = t.replace(f'src="assets/img/{img.name}"',
-                          f'src="data:image/svg+xml,{urllib.parse.quote(img.read_text())}"')
         (out / name).write_text(t)
 
 
