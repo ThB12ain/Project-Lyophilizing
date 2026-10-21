@@ -63,13 +63,6 @@ SERVICE_GROUPS = [("all", "services.html", "Services overview")]
 def header(active):
     def cur(k):
         return ' aria-current="page"' if k == active else ""
-    tabs = []
-    for k in ORDER:
-        s = SERVICES[k]
-        if s.get("featured"):
-            tabs.append(f'<a href="{FILE[k]}" class="featured"{cur(k)}>{e(s["title"])}<span class="star">CORE</span></a>')
-        else:
-            tabs.append(f'<a href="{FILE[k]}"{cur(k)}>{e(s["title"])}</a>')
     svc_links = (f'<a href="services.html"{cur("services")}>Services overview</a>'
                  + "".join(f'<a href="{FILE[k]}"{cur(k)}>{e(SERVICES[k]["title"])}</a>' for k in ORDER))
     co_links = "".join(f'<a href="{h}"{cur(k)}>{t}</a>' for h, t, k in COMPANY_NAV)
@@ -96,7 +89,6 @@ def header(active):
       {top("Resources", "resources", res_links, active == "contact")}
     </nav>
     <div class="bar-links">
-      <a class="btn btn-primary btn-talk caps" href="contact.html">Talk to an expert <span aria-hidden="true">›</span></a>
       <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -106,11 +98,6 @@ def header(active):
       <div><h4>About</h4>{co_links}</div>
       <div><h4>Resources</h4>{res_links}</div>
     </div>
-  </div>
-  <div class="tabs-scroll">
-    <nav class="wrap tabs" aria-label="Services">
-      {chr(10).join("      " + t for t in tabs).strip()}
-    </nav>
   </div>
 </header>
 """

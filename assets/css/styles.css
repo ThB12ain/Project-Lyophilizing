@@ -550,3 +550,9 @@ table.spec.formats-table { min-width: 640px; }
 .theme-v1 .legend i:not(.prod) { border-top-color: var(--teal); }
 .theme-v1 nav.tabs a.featured { color: var(--teal); }
 .theme-v1 nav.tabs a.featured .star { border-color: rgba(42,138,131,.45); }
+
+/* Version 1 header: logo, four top links and a menu button, no tab row */
+.theme-v1 .menu-btn { display: flex; }
+.theme-v1 .bar { padding-block: 18px; }
+.theme-v1 .mainnav { margin-right: 20px; }
+.theme-v1 .nav-top { color: var(--fg); }
