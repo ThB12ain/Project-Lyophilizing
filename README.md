@@ -79,6 +79,10 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000
 ```
 
+## Photos
+
+The four photos in the home page stats grid are loaded from Unsplash and are free to use under the [Unsplash License](https://unsplash.com/license). They are credited under the grid. To use your own photos, put them in `assets/img/` and change the `src` of each `img.tile.photo` in `tools/partials/home.html`.
+
 ## Before launch
 
 - Replace the sample address, phone and email (`tools/partials/contact.html`, footer and `COMPANY` block in `tools/build.py`).

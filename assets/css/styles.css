@@ -509,3 +509,8 @@ table.spec.formats-table { min-width: 640px; }
 
 /* Positioning block: illustration on the left on wide screens */
 @media (min-width: 861px) { .positioning .positioning-art { order: -1; } }
+
+/* Photo tiles: teal bar along the bottom edge */
+.stat-mosaic .tile.photo { background: var(--frost); border-bottom: 6px solid var(--ice); border-radius: var(--radius) var(--radius) 4px 4px; }
+.photo-credit { margin-top: 14px; font-size: 13px; color: var(--muted); }
+.photo-credit a { color: inherit; }
