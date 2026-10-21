@@ -1,6 +1,6 @@
 # Sublyra Sciences website
 
-Static marketing site for **Sublyra Sciences**, a contract manufacturer that specializes in lyophilization and offers washing, sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.
+Static marketing site for **Sublyra Sciences**, a contract manufacturer that specializes in lyophilization and offers formulation, reagent manufacturing, fill and finish, kitting and packaging, storage and logistics, quality control, combination products and technical transfer under one roof.
 
 > "Sublyra Sciences" is a working brand name. The address, phone, email and all capacity figures on the site are sample values to replace before launch.
 
@@ -10,15 +10,15 @@ Static marketing site for **Sublyra Sciences**, a contract manufacturer that spe
 |---|---|
 | Home | `index.html` |
 | Services overview | `services.html` |
-| Washing | `washing.html` |
-| Sterilizing | `sterilizing.html` |
-| Mixing | `mixing.html` |
-| Filling | `filling.html` |
+| Formulation | `formulation.html` |
+| Reagent Manufacturing | `reagent-manufacturing.html` |
+| Fill and Finish | `fill-finish.html` |
 | Lyophilization (core service) | `lyophilization.html` |
-| Capping | `capping.html` |
-| Labeling | `labeling.html` |
-| R&D | `rnd.html` |
-| Custom Synthesis | `custom-synthesis.html` |
+| Kitting and Packaging | `kitting-packaging.html` |
+| Storage and Logistics | `storage-logistics.html` |
+| Quality Control | `quality-control.html` |
+| Combination Product Manufacturing | `combination-products.html` |
+| Technical Transfer | `tech-transfer.html` |
 | About us | `about.html` |
 | How we work | `how-we-work.html` |
 | Quality | `quality.html` |

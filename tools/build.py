@@ -17,15 +17,14 @@ ROOT = Path(__file__).resolve().parent.parent
 TOOLS = ROOT / "tools"
 BRAND = "Sublyra Sciences"
 SERVICES = json.loads((TOOLS / "services.json").read_text())
-ORDER = ["washing", "sterilizing", "mixing", "filling", "lyophilization",
-         "capping", "labeling", "rnd", "synthesis"]
+ORDER = ["formulation", "reagent-manufacturing", "fill-finish", "lyophilization",
+         "kitting-packaging", "storage-logistics", "quality-control", "combination-products", "tech-transfer"]
 CHAIN = [k for k in ORDER if SERVICES[k].get("step")]
-CHAIN_HINT = {"washing": "Vials, stoppers", "sterilizing": "Depyrogenation",
-              "mixing": "Compounding", "filling": "Aseptic fill",
-              "lyophilization": "Primary and secondary drying", "capping": "Seal and inspect",
-              "labeling": "Label and pack"}
+CHAIN_HINT = {"formulation": "Screening, compounding", "reagent-manufacturing": "Mixes, buffers, controls",
+              "fill-finish": "Aseptic fill, stopper", "lyophilization": "Primary and secondary drying",
+              "kitting-packaging": "Label, kit, carton",
+              "storage-logistics": "Store and ship"}
 FILE = {k: f"{k}.html" for k in ORDER}
-FILE["synthesis"] = "custom-synthesis.html"
 e = html.escape
 
 LOGO_MARK = """<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
@@ -171,7 +170,7 @@ def footer():
     <div class="foot-grid">
       <div>
         <a class="brand" href="index.html">{LOGO_MARK}<span class="brand-name">Sublyra <span>Sciences</span></span></a>
-        <p style="margin-top:12px;max-width:28em">Lyophilization-led contract manufacturing, from component washing to labeled product.</p>
+        <p style="margin-top:12px;max-width:28em">Lyophilization-led contract manufacturing, from formulation to stored, ready-to-ship product.</p>
         <p style="margin-top:12px">1200 Example Way, Anytown, CA 90000</p>
       </div>
       <div><h4>Company</h4><ul>{co}</ul></div>
@@ -216,8 +215,8 @@ ICONS = (TOOLS / "partials" / "icons.svg").read_text()
 
 def service_body(k):
     s = SERVICES[k]
-    fit = (f"{s['title']} feeds the line before step 01." if s.get("support")
-           else f"Step {s['step']:02d} of 7 on one floor.")
+    fit = (f"{s['title']} supports every step of the line." if s.get("support")
+           else f"Step {s['step']:02d} of 6 on one floor.")
     caps = "".join(f'<div class="cap"><span class="idx"></span><h3>{e(h)}</h3><p>{e(p)}</p></div>' for h, p in s["caps"])
     spec = "".join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td></tr>' for a, b in s["spec"])
     body = "".join(f"<p>{e(p)}</p>" for p in s["specBody"])
@@ -258,7 +257,7 @@ def service_body(k):
         <div><p class="eyebrow">Where this fits</p><h2>{e(fit)}</h2></div>
       </div>
       {chain(k)}
-      <div class="chain-support">Feeding the line: <a href="rnd.html">R&amp;D and formulation</a><a href="custom-synthesis.html">Custom synthesis</a></div>
+      <div class="chain-support">Supporting every step: <a href="quality-control.html">Quality control</a><a href="tech-transfer.html">Technical transfer</a><a href="combination-products.html">Combination products</a></div>
     </div>
   </section>"""
 
@@ -297,8 +296,8 @@ def build():
             .replace('<ol class="chain" data-chain></ol>', chain()))
     pages["index.html"] = page(
         "home", BRAND,
-        "Sublyra Sciences is a contract manufacturer specializing in lyophilization, with washing, "
-        "sterilizing, mixing, filling, capping, labeling, R&D and custom synthesis under one roof.", home, cta=False)
+        "Sublyra Sciences is a contract manufacturer specializing in lyophilization, with formulation, "
+        "reagent manufacturing, fill and finish, kitting, storage and quality control under one roof.", home, cta=False)
     for k in ORDER:
         s = SERVICES[k]
         pages[FILE[k]] = page(k, f"{s['title']} · {BRAND}", s["card"], service_body(k))

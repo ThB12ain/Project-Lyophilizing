@@ -9,5 +9,8 @@
     <symbol id="i-label" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 6h10v20a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2z"/><rect x="9" y="13" width="14" height="9" rx="1"/><path d="M12 16h3M12 19h1.5M17 16v3M19 16v3"/></g></symbol>
     <symbol id="i-rnd" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4h8M13 4v8L6.5 24a2.5 2.5 0 0 0 2.2 4h14.6a2.5 2.5 0 0 0 2.2-4L19 12V4"/><path d="M9.5 19h13"/><circle cx="14" cy="23" r="1"/><circle cx="18.5" cy="21.5" r=".8"/></g></symbol>
     <symbol id="i-synth" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 5l7 4v8l-7 4-7-4V9z"/><path d="M23 17l5 3M9 17l-5 3M16 21v6M16 5V2"/><circle cx="28" cy="20.5" r="1.4"/><circle cx="4" cy="20.5" r="1.4"/></g></symbol>
+    <symbol id="i-store" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l12-7 12 7v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 28V16h14v12"/><path d="M9 20h14M9 24h14"/></g></symbol>
+    <symbol id="i-combo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4l6 6M25 7l-12 12-5 1 1-5L21 3"/><path d="M15 11l6 6"/><path d="M8 20l-4 4 4 4 4-4"/></g></symbol>
+    <symbol id="i-transfer" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h19l-5-5M27 21H8l5 5"/></g></symbol>
   </defs>
 </svg>
